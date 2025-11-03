@@ -17,12 +17,18 @@
 }
 
 .stats {
-    margin: 10px 0;
+    margin: 2px 0;
     padding: 10px;
     background: var(--form-groupbox-bg);
     border-radius: 4px;
     font-size: 0.9rem;
     text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
 }
 
 .sentence-list {
@@ -41,13 +47,8 @@
 .sentence {
     text-align: left;
     white-space: normal;
-    line-height: 2rem;
-}
-
-.sentence .blank {
-    display: inline;
-    white-space: normal;
-    margin-right: 0.5rem;
+    min-height: 10rem;
+    padding: 1rem 0;
 }
 
 .blank {
@@ -58,9 +59,13 @@
     border-radius: 4px;
     background: var(--form-input-bg);
     cursor: pointer;
+    -webkit-user-select: none;
     user-select: none;
-    margin-top: 5px;
-    min-width: 5rem;
+    margin: 0.5rem;
+    min-width: 4rem;
+    white-space: normal;
+    min-height: 1.5rem;
+    vertical-align: middle;
 }
 
 .blank.correct {
@@ -95,6 +100,7 @@
     border: 1px solid #8ab9ff;
     border-radius: 4px;
     cursor: pointer;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -114,8 +120,10 @@
 .buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    padding: 0.5rem;
 }
 
 .btn {

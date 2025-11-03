@@ -1,7 +1,7 @@
 import React from "react";
 import "./one-word-trainer.css"
-import { Q2App } from "q2-web";
 import { App } from '../App'
+import Cookies from "js-cookie";
 
 
 type WordEntry = {
@@ -15,17 +15,40 @@ interface OneWordTrainerData {
     data: WordEntry[];
 }
 
+const COOKIE_NAME = 'prep_trainer_stats';
+
+// Helper functions for cookie operations
+const saveStatsToCookie = (answers: Record<number, { correct: boolean; lastPassNumber?: number }>, passCount: number) => {
+    const data = { answers, passCount };
+    Cookies.set(COOKIE_NAME, JSON.stringify(data), { expires: 365, path: '/' }); // 1 year expiration
+};
+
+const loadStatsFromCookie = () => {
+    const cookieData = Cookies.get(COOKIE_NAME);
+    if (cookieData) {
+        try {
+            const data = JSON.parse(cookieData);
+            return { answers: data.answers, passCount: data.passCount };
+        } catch {
+            return { answers: {}, passCount: 0 };
+        }
+    }
+    return { answers: {}, passCount: 0 };
+};
+
 export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     const [currentIndex, setCurrentIndex] = React.useState(() =>
         Math.floor(Math.random() * data.length)
     );
     const [selectedWord, setSelectedWord] = React.useState<string>("");
     const [isChecked, setIsChecked] = React.useState(false);
-    const [passCount, setPassCount] = React.useState(0);
+    
+    // Initialize state from cookie
+    const [passCount, setPassCount] = React.useState(() => loadStatsFromCookie().passCount);
     const [answers, setAnswers] = React.useState<Record<number, {
         correct: boolean;
         lastPassNumber?: number;
-    }>>({});
+    }>>(() => loadStatsFromCookie().answers);
 
     // Calculate statistics
     const stats = React.useMemo(() => {
@@ -88,7 +111,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
             );
         }
         // Proceed to next exercise
-        setPassCount(prev => prev + 1);
+        setPassCount((prev: number) => prev + 1);
         setCurrentIndex(getRandomIndex());
         setSelectedWord("");
         setIsChecked(false);
@@ -117,13 +140,16 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     const handleCheck = () => {
         setIsChecked(true);
         const isCorrect = selectedWord === answer;
-        setAnswers(prev => ({
-            ...prev,
+        const newAnswers = {
+            ...answers,
             [currentIndex]: {
                 correct: isCorrect,
                 lastPassNumber: isCorrect ? passCount : undefined
             }
-        }));
+        };
+        setAnswers(newAnswers);
+        // Save to cookie after updating
+        saveStatsToCookie(newAnswers, passCount);
         return isCorrect;
     };
 
@@ -134,7 +160,9 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
         // Reset statistics
         setAnswers({});
         setPassCount(0);
-        App.instance?.showMsg("Statistics reset", "Info");
+        // Save empty stats to cookie
+        saveStatsToCookie({}, 0);
+        App.instance?.showMsg("Statistik zurückgesetzt", "info");
     };
 
     const sentenceParts = processSentence(ex.sentence);
@@ -143,7 +171,10 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
         <div className="exercise-container">
             <h2>{ex.key}</h2>
             <div className="stats">
-                Correct: {stats.correct} | Wrong: {stats.wrong} | Total: {stats.total} | Success Rate: {stats.percentage}%
+                <span>Correct: {stats.correct}</span>
+                <span>Wrong: {stats.wrong}</span>
+                <span>Total: {stats.total}</span>
+                <span>Success Rate: {stats.percentage}%</span>
             </div>
             <div className="sentence">
                 {sentenceParts.map((part, index) =>
