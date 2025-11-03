@@ -16,6 +16,15 @@
     font-weight: 900;
 }
 
+.stats {
+    margin: 10px 0;
+    padding: 10px;
+    background: var(--form-groupbox-bg);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 .sentence-list {
     overflow-y: auto;
     overflow-x: hidden;
