@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+import "./one-word-trainer.css"
 
 
 type WordEntry = {
@@ -17,15 +18,20 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     // console.log(ex)
     return (
         <div className="exercise-container">
-            <div>{ex.key}</div>
+            <h2>{ex.key}</h2>
             <div className="sentence">
                 {ex.sentence}
             </div>
             <div className="word-pool" >
                 {ex.words.map((w) => {
-                    return <div>{w}</div>
+                    return <div className="word">{w}</div>
                 })}
             </div>
+            <div className="buttons">
+                <button>Prüfen</button>
+                <button>Zurücksetzen</button>
+            </div>
+
         </div>
     );
 };
