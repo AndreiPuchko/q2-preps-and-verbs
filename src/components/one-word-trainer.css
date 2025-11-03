@@ -35,16 +35,15 @@
     line-height: 2rem;
 }
 
-.sentence span,
 .sentence .blank {
     display: inline;
     white-space: normal;
+    margin-right: 0.5rem;
 }
 
 .blank {
     display: inline-block;
     padding: 0.3rem 0.8rem;
-    min-width: 80px;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -52,6 +51,7 @@
     cursor: pointer;
     user-select: none;
     margin-top: 5px;
+    min-width: 5rem;
 }
 
 .blank.correct {
@@ -75,7 +75,8 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     background: var(--form-groupbox-bg);
-    padding: 0.5rem;
+    padding: .5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 

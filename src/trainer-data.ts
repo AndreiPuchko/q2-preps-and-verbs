@@ -1,7 +1,7 @@
 export const trainer_data = [
     {
         "key": "abhängen",
-        "sentence": "Die Reisekosten hängen **{von}** der Dauer des Aufenthalts ab.",
+        "sentence": "Die Reisekosten hängen {von} der Dauer des Aufenthalts ab.",
         "words": [
             "von",
             "mit",
@@ -13,7 +13,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) abmelden",
-        "sentence": "Der Teilnehmer muss sich **{von}** dem Seminar abmelden.",
+        "sentence": "Der Teilnehmer muss sich {von} dem Seminar abmelden.",
         "words": [
             "von",
             "zu",
@@ -25,7 +25,7 @@ export const trainer_data = [
     },
     {
         "key": "ändern",
-        "sentence": "Die Firma ändert ihre Strategie **{in}** Bezug auf Marketing.",
+        "sentence": "Die Firma ändert ihre Strategie {in} Bezug auf Marketing.",
         "words": [
             "in",
             "von",
@@ -37,7 +37,7 @@ export const trainer_data = [
     },
     {
         "key": "anfangen",
-        "sentence": "Wir fangen **{mit}** der Renovierung des Hauses pünktlich an.",
+        "sentence": "Wir fangen {mit} der Renovierung des Hauses pünktlich an.",
         "words": [
             "mit",
             "auf",
@@ -49,7 +49,7 @@ export const trainer_data = [
     },
     {
         "key": "sich ängstigen",
-        "sentence": "Das Kind ängstigt sich sehr **{vor}** der Dunkelheit.",
+        "sentence": "Das Kind ängstigt sich sehr {vor} der Dunkelheit.",
         "words": [
             "vor",
             "über",
@@ -61,7 +61,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) anmelden",
-        "sentence": "Du kannst dich **{zu}** dem Sportkurs online anmelden.",
+        "sentence": "Du kannst dich {zu} dem Sportkurs online anmelden.",
         "words": [
             "zu",
             "von",
@@ -73,7 +73,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) anpassen",
-        "sentence": "Er muss sich schnell **{an}** die neuen Arbeitszeiten anpassen.",
+        "sentence": "Er muss sich schnell {an} die neuen Arbeitszeiten anpassen.",
         "words": [
             "an",
             "mit",
@@ -85,7 +85,7 @@ export const trainer_data = [
     },
     {
         "key": "anrufen",
-        "sentence": "Ich rufe dich **{wegen}** der Besprechung morgen an.",
+        "sentence": "Ich rufe dich {wegen} der Besprechung morgen an.",
         "words": [
             "wegen",
             "über",
@@ -97,7 +97,7 @@ export const trainer_data = [
     },
     {
         "key": "antworten",
-        "sentence": "Bitte antworte mir so schnell wie möglich **{auf}** meine E-Mail.",
+        "sentence": "Bitte antworte mir so schnell wie möglich {auf} meine E-Mail.",
         "words": [
             "auf",
             "über",
@@ -109,7 +109,7 @@ export const trainer_data = [
     },
     {
         "key": "arbeiten",
-        "sentence": "Der Programmierer arbeitet seit Monaten **{an}** einer neuen App.",
+        "sentence": "Der Programmierer arbeitet seit Monaten {an} einer neuen App.",
         "words": [
             "an",
             "in",
@@ -121,7 +121,7 @@ export const trainer_data = [
     },
     {
         "key": "sich ärgern",
-        "sentence": "Sie ärgert sich ständig **{über}** den Lärm der Nachbarn.",
+        "sentence": "Sie ärgert sich ständig {über} den Lärm der Nachbarn.",
         "words": [
             "über",
             "mit",
@@ -133,7 +133,7 @@ export const trainer_data = [
     },
     {
         "key": "sich aufregen",
-        "sentence": "Reg dich bitte nicht **{wegen}** dieser Kleinigkeit auf.",
+        "sentence": "Reg dich bitte nicht {wegen} dieser Kleinigkeit auf.",
         "words": [
             "wegen",
             "über",
@@ -145,7 +145,7 @@ export const trainer_data = [
     },
     {
         "key": "ausbrechen",
-        "sentence": "Das Feuer ist **{in}** einem unbewohnten Lagerhaus ausgebrochen.",
+        "sentence": "Das Feuer ist {in} einem unbewohnten Lagerhaus ausgebrochen.",
         "words": [
             "in",
             "aus",
@@ -157,7 +157,7 @@ export const trainer_data = [
     },
     {
         "key": "äußern",
-        "sentence": "Der Politiker äußert sich heute Abend **{zu}** den aktuellen Gerüchten.",
+        "sentence": "Der Politiker äußert sich heute Abend {zu} den aktuellen Gerüchten.",
         "words": [
             "zu",
             "über",
@@ -169,7 +169,7 @@ export const trainer_data = [
     },
     {
         "key": "ausgeben",
-        "sentence": "Sie gibt ihr gesamtes Taschengeld **{für}** Computerspiele aus.",
+        "sentence": "Sie gibt ihr gesamtes Taschengeld {für} Computerspiele aus.",
         "words": [
             "für",
             "von",
@@ -181,7 +181,7 @@ export const trainer_data = [
     },
     {
         "key": "ausgehen",
-        "sentence": "Wir gehen heute Abend **{mit}** unseren Freunden aus.",
+        "sentence": "Wir gehen heute Abend {mit} unseren Freunden aus.",
         "words": [
             "mit",
             "zu",
@@ -193,7 +193,7 @@ export const trainer_data = [
     },
     {
         "key": "sich ausruhen",
-        "sentence": "Er muss sich **{von}** der anstrengenden Woche ausruhen.",
+        "sentence": "Er muss sich {von} der anstrengenden Woche ausruhen.",
         "words": [
             "von",
             "über",
@@ -205,7 +205,7 @@ export const trainer_data = [
     },
     {
         "key": "sich austauschen",
-        "sentence": "Die Experten tauschen sich regelmäßig **{über}** neue Methoden aus.",
+        "sentence": "Die Experten tauschen sich regelmäßig {über} neue Methoden aus.",
         "words": [
             "über",
             "mit",
@@ -217,7 +217,7 @@ export const trainer_data = [
     },
     {
         "key": "sich auszeichnen",
-        "sentence": "Die Studentin zeichnet sich **{durch}** ihre hervorragenden Noten aus.",
+        "sentence": "Die Studentin zeichnet sich {durch} ihre hervorragenden Noten aus.",
         "words": [
             "durch",
             "mit",
@@ -229,7 +229,7 @@ export const trainer_data = [
     },
     {
         "key": "basieren",
-        "sentence": "Diese gesamte Forschung basiert **{auf}** veralteten Daten.",
+        "sentence": "Diese gesamte Forschung basiert {auf} veralteten Daten.",
         "words": [
             "auf",
             "mit",
@@ -241,7 +241,7 @@ export const trainer_data = [
     },
     {
         "key": "sich bedanken",
-        "sentence": "Er bedankt sich höflich **{für}** die schnelle Lieferung.",
+        "sentence": "Er bedankt sich höflich {für} die schnelle Lieferung.",
         "words": [
             "für",
             "über",
@@ -253,7 +253,7 @@ export const trainer_data = [
     },
     {
         "key": "sich befassen",
-        "sentence": "Der neue Ausschuss befasst sich **{mit}** der Reform des Bildungssystems.",
+        "sentence": "Der neue Ausschuss befasst sich {mit} der Reform des Bildungssystems.",
         "words": [
             "mit",
             "über",
@@ -265,7 +265,7 @@ export const trainer_data = [
     },
     {
         "key": "befreien",
-        "sentence": "Die Soldaten befreiten das Dorf **{von}** der Belagerung.",
+        "sentence": "Die Soldaten befreiten das Dorf {von} der Belagerung.",
         "words": [
             "von",
             "aus",
@@ -277,7 +277,7 @@ export const trainer_data = [
     },
     {
         "key": "sich begeistern",
-        "sentence": "Meine Schwester begeistert sich sehr **{für}** asiatische Kunst.",
+        "sentence": "Meine Schwester begeistert sich sehr {für} asiatische Kunst.",
         "words": [
             "für",
             "von",
@@ -289,7 +289,7 @@ export const trainer_data = [
     },
     {
         "key": "beginnen",
-        "sentence": "Die Vorstellung beginnt gleich **{mit}** einer kurzen Einleitung.",
+        "sentence": "Die Vorstellung beginnt gleich {mit} einer kurzen Einleitung.",
         "words": [
             "mit",
             "von",
@@ -301,7 +301,7 @@ export const trainer_data = [
     },
     {
         "key": "behandeln",
-        "sentence": "Die Ärztin behandelt den Patienten **{gegen}** eine schwere Grippe.",
+        "sentence": "Die Ärztin behandelt den Patienten {gegen} eine schwere Grippe.",
         "words": [
             "gegen",
             "für",
@@ -313,7 +313,7 @@ export const trainer_data = [
     },
     {
         "key": "beitragen",
-        "sentence": "Jeder Bürger sollte **{zu}** einem sauberen Stadtbild beitragen.",
+        "sentence": "Jeder Bürger sollte {zu} einem sauberen Stadtbild beitragen.",
         "words": [
             "zu",
             "für",
@@ -325,7 +325,7 @@ export const trainer_data = [
     },
     {
         "key": "sich beklagen",
-        "sentence": "Die Gäste beklagen sich **{über}** das schlechte Essen im Hotel.",
+        "sentence": "Die Gäste beklagen sich {über} das schlechte Essen im Hotel.",
         "words": [
             "über",
             "mit",
@@ -337,7 +337,7 @@ export const trainer_data = [
     },
     {
         "key": "sich bemühen",
-        "sentence": "Er bemüht sich sehr **{um}** eine Beförderung in der Firma.",
+        "sentence": "Er bemüht sich sehr {um} eine Beförderung in der Firma.",
         "words": [
             "um",
             "für",
@@ -349,7 +349,7 @@ export const trainer_data = [
     },
     {
         "key": "berichten",
-        "sentence": "Die Reporter berichten live **{über}** die politische Krise.",
+        "sentence": "Die Reporter berichten live {über} die politische Krise.",
         "words": [
             "über",
             "von",
@@ -361,7 +361,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) beschäftigen",
-        "sentence": "Der Student beschäftigt sich intensiv **{mit}** lateinischen Texten.",
+        "sentence": "Der Student beschäftigt sich intensiv {mit} lateinischen Texten.",
         "words": [
             "mit",
             "über",
@@ -373,7 +373,7 @@ export const trainer_data = [
     },
     {
         "key": "sich beschweren",
-        "sentence": "Sie beschwert sich **{bei}** der Managerin **{wegen}** der defekten Klimaanlage.",
+        "sentence": "Sie beschwert sich {bei} der Managerin {wegen} der defekten Klimaanlage.",
         "words": [
             "bei",
             "über",
@@ -385,7 +385,7 @@ export const trainer_data = [
     },
     {
         "key": "bestellen",
-        "sentence": "Wir bestellen die Lebensmittel immer **{bei}** einem regionalen Anbieter.",
+        "sentence": "Wir bestellen die Lebensmittel immer {bei} einem regionalen Anbieter.",
         "words": [
             "bei",
             "über",
@@ -397,7 +397,7 @@ export const trainer_data = [
     },
     {
         "key": "sich beteiligen",
-        "sentence": "Viele Freiwillige beteiligen sich **{an}** dem Aufräumprojekt.",
+        "sentence": "Viele Freiwillige beteiligen sich {an} dem Aufräumprojekt.",
         "words": [
             "an",
             "mit",
@@ -409,7 +409,7 @@ export const trainer_data = [
     },
     {
         "key": "sich bewerben",
-        "sentence": "Er bewirbt sich derzeit **{um}** eine Stelle als Ingenieur.",
+        "sentence": "Er bewirbt sich derzeit {um} eine Stelle als Ingenieur.",
         "words": [
             "um",
             "für",
@@ -421,7 +421,7 @@ export const trainer_data = [
     },
     {
         "key": "sich beziehen",
-        "sentence": "Meine Frage bezieht sich direkt **{auf}** den vorherigen Satz.",
+        "sentence": "Meine Frage bezieht sich direkt {auf} den vorherigen Satz.",
         "words": [
             "auf",
             "zu",
@@ -433,7 +433,7 @@ export const trainer_data = [
     },
     {
         "key": "bitten",
-        "sentence": "Ich möchte dich höflich **{um}** einen kleinen Gefallen bitten.",
+        "sentence": "Ich möchte dich höflich {um} einen kleinen Gefallen bitten.",
         "words": [
             "um",
             "für",
@@ -445,7 +445,7 @@ export const trainer_data = [
     },
     {
         "key": "danken",
-        "sentence": "Ich danke dir herzlich **{für}** deine tolle Unterstützung.",
+        "sentence": "Ich danke dir herzlich {für} deine tolle Unterstützung.",
         "words": [
             "für",
             "über",
@@ -457,7 +457,7 @@ export const trainer_data = [
     },
     {
         "key": "denken",
-        "sentence": "Ich denke oft **{an}** die schönen Momente unserer Kindheit.",
+        "sentence": "Ich denke oft {an} die schönen Momente unserer Kindheit.",
         "words": [
             "an",
             "über",
@@ -469,7 +469,7 @@ export const trainer_data = [
     },
     {
         "key": "demonstrieren",
-        "sentence": "Die Bürger demonstrieren **{gegen}** die geplante Gesetzesänderung.",
+        "sentence": "Die Bürger demonstrieren {gegen} die geplante Gesetzesänderung.",
         "words": [
             "gegen",
             "für",
@@ -481,7 +481,7 @@ export const trainer_data = [
     },
     {
         "key": "diskutieren",
-        "sentence": "Wir diskutieren lebhaft **{über}** die Ergebnisse der letzten Wahl.",
+        "sentence": "Wir diskutieren lebhaft {über} die Ergebnisse der letzten Wahl.",
         "words": [
             "über",
             "mit",
@@ -493,7 +493,7 @@ export const trainer_data = [
     },
     {
         "key": "sich eignen",
-        "sentence": "Dieses Material eignet sich besonders gut **{für}** den Außenbereich.",
+        "sentence": "Dieses Material eignet sich besonders gut {für} den Außenbereich.",
         "words": [
             "für",
             "zu",
@@ -505,7 +505,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) einarbeiten",
-        "sentence": "Der neue Kollege muss sich noch **{in}** die Prozesse einarbeiten.",
+        "sentence": "Der neue Kollege muss sich noch {in} die Prozesse einarbeiten.",
         "words": [
             "in",
             "an",
@@ -517,7 +517,7 @@ export const trainer_data = [
     },
     {
         "key": "einladen",
-        "sentence": "Wir laden dich herzlich **{zu}** unserer Hochzeit ein.",
+        "sentence": "Wir laden dich herzlich {zu} unserer Hochzeit ein.",
         "words": [
             "zu",
             "für",
@@ -529,7 +529,7 @@ export const trainer_data = [
     },
     {
         "key": "einstellen",
-        "sentence": "Die Firma stellt einen Experten **{als}** neuen IT-Leiter ein.",
+        "sentence": "Die Firma stellt einen Experten {als} neuen IT-Leiter ein.",
         "words": [
             "als",
             "zu",
@@ -541,7 +541,7 @@ export const trainer_data = [
     },
     {
         "key": "einziehen",
-        "sentence": "Die Familie zieht bald **{in}** ihr frisch renoviertes Haus ein.",
+        "sentence": "Die Familie zieht bald {in} ihr frisch renoviertes Haus ein.",
         "words": [
             "in",
             "zu",
@@ -553,7 +553,7 @@ export const trainer_data = [
     },
     {
         "key": "sich empören",
-        "sentence": "Die Öffentlichkeit empört sich **{über}** den Skandal.",
+        "sentence": "Die Öffentlichkeit empört sich {über} den Skandal.",
         "words": [
             "über",
             "mit",
@@ -565,7 +565,7 @@ export const trainer_data = [
     },
     {
         "key": "sich engagieren",
-        "sentence": "Er engagiert sich stark **{für}** soziale Gerechtigkeit.",
+        "sentence": "Er engagiert sich stark {für} soziale Gerechtigkeit.",
         "words": [
             "für",
             "mit",
@@ -577,7 +577,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) entfernen",
-        "sentence": "Der Wanderer entfernt sich allmählich **{von}** der Gruppe.",
+        "sentence": "Der Wanderer entfernt sich allmählich {von} der Gruppe.",
         "words": [
             "von",
             "zu",
@@ -589,7 +589,7 @@ export const trainer_data = [
     },
     {
         "key": "sich entscheiden",
-        "sentence": "Sie entscheidet sich schließlich **{für}** das Studium in Berlin.",
+        "sentence": "Sie entscheidet sich schließlich {für} das Studium in Berlin.",
         "words": [
             "für",
             "zu",
@@ -601,7 +601,7 @@ export const trainer_data = [
     },
     {
         "key": "sich entschließen",
-        "sentence": "Er entschließt sich **{zu}** einer großen Spende an das Krankenhaus.",
+        "sentence": "Er entschließt sich {zu} einer großen Spende an das Krankenhaus.",
         "words": [
             "zu",
             "für",
@@ -613,7 +613,7 @@ export const trainer_data = [
     },
     {
         "key": "sich entschuldigen",
-        "sentence": "Ich entschuldige mich bei dir **{für}** meine späte Antwort.",
+        "sentence": "Ich entschuldige mich bei dir {für} meine späte Antwort.",
         "words": [
             "für",
             "über",
@@ -625,7 +625,7 @@ export const trainer_data = [
     },
     {
         "key": "sich entwickeln",
-        "sentence": "Die Stadt entwickelt sich schnell **{zu}** einem Technologiezentrum.",
+        "sentence": "Die Stadt entwickelt sich schnell {zu} einem Technologiezentrum.",
         "words": [
             "zu",
             "in",
@@ -637,7 +637,7 @@ export const trainer_data = [
     },
     {
         "key": "sich erhoffen",
-        "sentence": "Er erhofft sich viel **{von}** dieser neuen Geschäftsidee.",
+        "sentence": "Er erhofft sich viel {von} dieser neuen Geschäftsidee.",
         "words": [
             "von",
             "auf",
@@ -649,7 +649,7 @@ export const trainer_data = [
     },
     {
         "key": "sich erholen",
-        "sentence": "Sie muss sich im Urlaub **{von}** dem Stress erholen.",
+        "sentence": "Sie muss sich im Urlaub {von} dem Stress erholen.",
         "words": [
             "von",
             "über",
@@ -661,7 +661,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) erinnern",
-        "sentence": "Ich kann mich nicht mehr **{an}** das genaue Datum erinnern.",
+        "sentence": "Ich kann mich nicht mehr {an} das genaue Datum erinnern.",
         "words": [
             "an",
             "von",
@@ -673,7 +673,7 @@ export const trainer_data = [
     },
     {
         "key": "sich erkundigen",
-        "sentence": "Wir erkundigen uns **{nach}** den besten Restaurants in der Nähe.",
+        "sentence": "Wir erkundigen uns {nach} den besten Restaurants in der Nähe.",
         "words": [
             "nach",
             "über",
@@ -685,7 +685,7 @@ export const trainer_data = [
     },
     {
         "key": "erschrecken",
-        "sentence": "Die Kinder erschrecken leicht **{vor}** dem lauten Feuerwerk.",
+        "sentence": "Die Kinder erschrecken leicht {vor} dem lauten Feuerwerk.",
         "words": [
             "vor",
             "über",
@@ -697,7 +697,7 @@ export const trainer_data = [
     },
     {
         "key": "erzählen",
-        "sentence": "Erzähl mir mehr **{über}** deine Abenteuer in Afrika.",
+        "sentence": "Erzähl mir mehr {über} deine Abenteuer in Afrika.",
         "words": [
             "über",
             "von",
@@ -709,7 +709,7 @@ export const trainer_data = [
     },
     {
         "key": "forschen",
-        "sentence": "Die Wissenschaftler forschen intensiv **{nach}** neuen Impfstoffen.",
+        "sentence": "Die Wissenschaftler forschen intensiv {nach} neuen Impfstoffen.",
         "words": [
             "nach",
             "über",
@@ -721,7 +721,7 @@ export const trainer_data = [
     },
     {
         "key": "fragen",
-        "sentence": "Ich werde den Experten **{nach}** seiner Einschätzung fragen.",
+        "sentence": "Ich werde den Experten {nach} seiner Einschätzung fragen.",
         "words": [
             "nach",
             "über",
@@ -733,7 +733,7 @@ export const trainer_data = [
     },
     {
         "key": "sich freuen (zukünftig)",
-        "sentence": "Wir freuen uns schon sehr **{auf}** das nächste Konzert.",
+        "sentence": "Wir freuen uns schon sehr {auf} das nächste Konzert.",
         "words": [
             "auf",
             "über",
@@ -745,7 +745,7 @@ export const trainer_data = [
     },
     {
         "key": "sich freuen (gegenwärtig)",
-        "sentence": "Sie freut sich riesig **{über}** die überraschende Einladung.",
+        "sentence": "Sie freut sich riesig {über} die überraschende Einladung.",
         "words": [
             "über",
             "auf",
@@ -757,7 +757,7 @@ export const trainer_data = [
     },
     {
         "key": "gefallen",
-        "sentence": "Die neue Dekoration gefällt mir **{wegen}** ihrer Einfachheit.",
+        "sentence": "Die neue Dekoration gefällt mir {wegen} ihrer Einfachheit.",
         "words": [
             "wegen",
             "durch",
@@ -769,7 +769,7 @@ export const trainer_data = [
     },
     {
         "key": "gelten",
-        "sentence": "Diese neue Vorschrift gilt ab sofort **{für}** alle Mitarbeiter.",
+        "sentence": "Diese neue Vorschrift gilt ab sofort {für} alle Mitarbeiter.",
         "words": [
             "für",
             "zu",
@@ -781,7 +781,7 @@ export const trainer_data = [
     },
     {
         "key": "gewinnen",
-        "sentence": "Der Athlet gewinnt die Goldmedaille **{bei}** der Weltmeisterschaft.",
+        "sentence": "Der Athlet gewinnt die Goldmedaille {bei} der Weltmeisterschaft.",
         "words": [
             "bei",
             "in",
@@ -793,7 +793,7 @@ export const trainer_data = [
     },
     {
         "key": "sich gewöhnen",
-        "sentence": "Sie gewöhnt sich nur langsam **{an}** das feuchte Klima.",
+        "sentence": "Sie gewöhnt sich nur langsam {an} das feuchte Klima.",
         "words": [
             "an",
             "mit",
@@ -805,7 +805,7 @@ export const trainer_data = [
     },
     {
         "key": "glauben",
-        "sentence": "Ich glaube felsenfest **{an}** die Existenz von Außerirdischen.",
+        "sentence": "Ich glaube felsenfest {an} die Existenz von Außerirdischen.",
         "words": [
             "an",
             "auf",
@@ -817,7 +817,7 @@ export const trainer_data = [
     },
     {
         "key": "gratulieren",
-        "sentence": "Wir gratulieren dir herzlich **{zu}** deinem neuen Job.",
+        "sentence": "Wir gratulieren dir herzlich {zu} deinem neuen Job.",
         "words": [
             "zu",
             "für",
@@ -829,7 +829,7 @@ export const trainer_data = [
     },
     {
         "key": "greifen",
-        "sentence": "Der Dieb greift schnell **{nach}** der Tasche auf dem Tisch.",
+        "sentence": "Der Dieb greift schnell {nach} der Tasche auf dem Tisch.",
         "words": [
             "nach",
             "zu",
@@ -841,7 +841,7 @@ export const trainer_data = [
     },
     {
         "key": "handeln (Thema)",
-        "sentence": "Der Roman handelt **{von}** einem einsamen Fischer am Meer.",
+        "sentence": "Der Roman handelt {von} einem einsamen Fischer am Meer.",
         "words": [
             "von",
             "über",
@@ -853,7 +853,7 @@ export const trainer_data = [
     },
     {
         "key": "handeln (Maßnahme)",
-        "sentence": "Die Regierung muss jetzt dringend **{gegen}** die hohe Arbeitslosigkeit handeln.",
+        "sentence": "Die Regierung muss jetzt dringend {gegen} die hohe Arbeitslosigkeit handeln.",
         "words": [
             "gegen",
             "mit",
@@ -865,7 +865,7 @@ export const trainer_data = [
     },
     {
         "key": "sich handeln",
-        "sentence": "Es handelt sich **{um}** eine einmalige Gelegenheit.",
+        "sentence": "Es handelt sich {um} eine einmalige Gelegenheit.",
         "words": [
             "um",
             "von",
@@ -877,7 +877,7 @@ export const trainer_data = [
     },
     {
         "key": "helfen",
-        "sentence": "Kannst du mir bitte **{bei}** der Organisation des Festes helfen?",
+        "sentence": "Kannst du mir bitte {bei} der Organisation des Festes helfen?",
         "words": [
             "bei",
             "mit",
@@ -889,7 +889,7 @@ export const trainer_data = [
     },
     {
         "key": "hinweisen",
-        "sentence": "Der Lehrer weist die Schüler **{auf}** die Wichtigkeit der Prüfung hin.",
+        "sentence": "Der Lehrer weist die Schüler {auf} die Wichtigkeit der Prüfung hin.",
         "words": [
             "auf",
             "an",
@@ -901,7 +901,7 @@ export const trainer_data = [
     },
     {
         "key": "hoffen",
-        "sentence": "Wir hoffen sehnlichst **{auf}** besseres Wetter am Wochenende.",
+        "sentence": "Wir hoffen sehnlichst {auf} besseres Wetter am Wochenende.",
         "words": [
             "auf",
             "an",
@@ -913,7 +913,7 @@ export const trainer_data = [
     },
     {
         "key": "sich identifizieren",
-        "sentence": "Er identifiziert sich stark **{mit}** der Philosophie des Unternehmens.",
+        "sentence": "Er identifiziert sich stark {mit} der Philosophie des Unternehmens.",
         "words": [
             "mit",
             "an",
@@ -925,7 +925,7 @@ export const trainer_data = [
     },
     {
         "key": "sich informieren",
-        "sentence": "Bitte informiere dich gründlich **{über}** die Reiserestriktionen.",
+        "sentence": "Bitte informiere dich gründlich {über} die Reiserestriktionen.",
         "words": [
             "über",
             "von",
@@ -937,7 +937,7 @@ export const trainer_data = [
     },
     {
         "key": "sich integrieren",
-        "sentence": "Die neuen Mitarbeiter integrieren sich gut **{in}** das bestehende Team.",
+        "sentence": "Die neuen Mitarbeiter integrieren sich gut {in} das bestehende Team.",
         "words": [
             "in",
             "an",
@@ -949,7 +949,7 @@ export const trainer_data = [
     },
     {
         "key": "sich interessieren",
-        "sentence": "Sie interessiert sich sehr **{für}** moderne Architektur.",
+        "sentence": "Sie interessiert sich sehr {für} moderne Architektur.",
         "words": [
             "für",
             "an",
@@ -961,7 +961,7 @@ export const trainer_data = [
     },
     {
         "key": "investieren",
-        "sentence": "Viele Firmen investieren derzeit **{in}** grüne Technologien.",
+        "sentence": "Viele Firmen investieren derzeit {in} grüne Technologien.",
         "words": [
             "in",
             "auf",
@@ -973,7 +973,7 @@ export const trainer_data = [
     },
     {
         "key": "kämpfen",
-        "sentence": "Die Aktivisten kämpfen unermüdlich **{für}** den Umweltschutz.",
+        "sentence": "Die Aktivisten kämpfen unermüdlich {für} den Umweltschutz.",
         "words": [
             "für",
             "um",
@@ -985,7 +985,7 @@ export const trainer_data = [
     },
     {
         "key": "klagen",
-        "sentence": "Der Patient klagt schon seit Tagen **{über}** starke Rückenschmerzen.",
+        "sentence": "Der Patient klagt schon seit Tagen {über} starke Rückenschmerzen.",
         "words": [
             "über",
             "gegen",
@@ -997,7 +997,7 @@ export const trainer_data = [
     },
     {
         "key": "kommunizieren",
-        "sentence": "Das Team kommuniziert regelmäßig **{mit}** den Kunden in Asien.",
+        "sentence": "Das Team kommuniziert regelmäßig {mit} den Kunden in Asien.",
         "words": [
             "mit",
             "über",
@@ -1009,7 +1009,7 @@ export const trainer_data = [
     },
     {
         "key": "sich konfrontieren",
-        "sentence": "Er muss sich endlich **{mit}** seinen finanziellen Problemen konfrontieren.",
+        "sentence": "Er muss sich endlich {mit} seinen finanziellen Problemen konfrontieren.",
         "words": [
             "mit",
             "gegen",
@@ -1021,7 +1021,7 @@ export const trainer_data = [
     },
     {
         "key": "sich konzentrieren",
-        "sentence": "Der Schüler muss sich besser **{auf}** die Prüfungsfragen konzentrieren.",
+        "sentence": "Der Schüler muss sich besser {auf} die Prüfungsfragen konzentrieren.",
         "words": [
             "auf",
             "an",
@@ -1033,7 +1033,7 @@ export const trainer_data = [
     },
     {
         "key": "mangeln",
-        "sentence": "Es mangelt dem Projekt leider **{an}** den notwendigen finanziellen Mitteln.",
+        "sentence": "Es mangelt dem Projekt leider {an} den notwendigen finanziellen Mitteln.",
         "words": [
             "an",
             "mit",
@@ -1045,7 +1045,7 @@ export const trainer_data = [
     },
     {
         "key": "sich melden",
-        "sentence": "Bitte melde dich schnell **{bei}** mir, wenn du angekommen bist.",
+        "sentence": "Bitte melde dich schnell {bei} mir, wenn du angekommen bist.",
         "words": [
             "bei",
             "an",
@@ -1057,7 +1057,7 @@ export const trainer_data = [
     },
     {
         "key": "sich messen",
-        "sentence": "Sie misst sich jedes Jahr **{mit}** den besten Läufern der Welt.",
+        "sentence": "Sie misst sich jedes Jahr {mit} den besten Läufern der Welt.",
         "words": [
             "mit",
             "an",
@@ -1069,7 +1069,7 @@ export const trainer_data = [
     },
     {
         "key": "nachfragen",
-        "sentence": "Wir müssen **{nach}** dem genauen Lieferdatum der Ware nachfragen.",
+        "sentence": "Wir müssen {nach} dem genauen Lieferdatum der Ware nachfragen.",
         "words": [
             "nach",
             "über",
@@ -1081,7 +1081,7 @@ export const trainer_data = [
     },
     {
         "key": "nützen",
-        "sentence": "Die neuen Regeln nützen vor allem **{den}** kleinen Unternehmen.",
+        "sentence": "Die neuen Regeln nützen vor allem {den} kleinen Unternehmen.",
         "words": [
             "den",
             "mit",
@@ -1093,7 +1093,7 @@ export const trainer_data = [
     },
     {
         "key": "sich orientieren",
-        "sentence": "Er orientiert sich stark **{an}** den Empfehlungen seines Mentors.",
+        "sentence": "Er orientiert sich stark {an} den Empfehlungen seines Mentors.",
         "words": [
             "an",
             "auf",
@@ -1105,7 +1105,7 @@ export const trainer_data = [
     },
     {
         "key": "passen",
-        "sentence": "Die Schuhe passen farblich perfekt **{zu}** der Hose.",
+        "sentence": "Die Schuhe passen farblich perfekt {zu} der Hose.",
         "words": [
             "zu",
             "mit",
@@ -1117,7 +1117,7 @@ export const trainer_data = [
     },
     {
         "key": "profitieren",
-        "sentence": "Viele Firmen profitieren direkt **{von}** der Steuersenkung.",
+        "sentence": "Viele Firmen profitieren direkt {von} der Steuersenkung.",
         "words": [
             "von",
             "mit",
@@ -1129,7 +1129,7 @@ export const trainer_data = [
     },
     {
         "key": "protestieren",
-        "sentence": "Die Bürger protestieren lautstark **{gegen}** die Baumaßnahmen.",
+        "sentence": "Die Bürger protestieren lautstark {gegen} die Baumaßnahmen.",
         "words": [
             "gegen",
             "für",
@@ -1141,7 +1141,7 @@ export const trainer_data = [
     },
     {
         "key": "raten",
-        "sentence": "Ich rate dir dringend **{zu}** mehr Geduld und Ruhe.",
+        "sentence": "Ich rate dir dringend {zu} mehr Geduld und Ruhe.",
         "words": [
             "zu",
             "für",
@@ -1153,7 +1153,7 @@ export const trainer_data = [
     },
     {
         "key": "reagieren",
-        "sentence": "Die Politik reagiert langsam **{auf}** die Wirtschaftskrise.",
+        "sentence": "Die Politik reagiert langsam {auf} die Wirtschaftskrise.",
         "words": [
             "auf",
             "zu",
@@ -1165,7 +1165,7 @@ export const trainer_data = [
     },
     {
         "key": "reden",
-        "sentence": "Sie reden stundenlang **{über}** ihre Pläne für die Zukunft.",
+        "sentence": "Sie reden stundenlang {über} ihre Pläne für die Zukunft.",
         "words": [
             "über",
             "von",
@@ -1177,7 +1177,7 @@ export const trainer_data = [
     },
     {
         "key": "reizen",
-        "sentence": "Der günstige Preis reizt ihn **{zum}** Kauf des neuen Fernsehers.",
+        "sentence": "Der günstige Preis reizt ihn {zum} Kauf des neuen Fernsehers.",
         "words": [
             "zum",
             "zu",
@@ -1189,7 +1189,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) retten",
-        "sentence": "Der Seemann rettete sich in letzter Minute **{aus}** dem sinkenden Schiff.",
+        "sentence": "Der Seemann rettete sich in letzter Minute {aus} dem sinkenden Schiff.",
         "words": [
             "aus",
             "von",
@@ -1201,7 +1201,7 @@ export const trainer_data = [
     },
     {
         "key": "sagen",
-        "sentence": "Er sagt den Reportern nichts **{zu}** den Gerüchten.",
+        "sentence": "Er sagt den Reportern nichts {zu} den Gerüchten.",
         "words": [
             "zu",
             "über",
@@ -1213,7 +1213,7 @@ export const trainer_data = [
     },
     {
         "key": "schmecken",
-        "sentence": "Die Soße schmeckt stark **{nach}** frischen Kräutern.",
+        "sentence": "Die Soße schmeckt stark {nach} frischen Kräutern.",
         "words": [
             "nach",
             "mit",
@@ -1225,7 +1225,7 @@ export const trainer_data = [
     },
     {
         "key": "schreiben",
-        "sentence": "Die Autorin schreibt einen Brief **{an}** ihre Verlegerin.",
+        "sentence": "Die Autorin schreibt einen Brief {an} ihre Verlegerin.",
         "words": [
             "an",
             "über",
@@ -1237,7 +1237,7 @@ export const trainer_data = [
     },
     {
         "key": "sensibilisieren",
-        "sentence": "Wir müssen die Bevölkerung **{für}** das Thema Datenschutz sensibilisieren.",
+        "sentence": "Wir müssen die Bevölkerung {für} das Thema Datenschutz sensibilisieren.",
         "words": [
             "für",
             "an",
@@ -1249,7 +1249,7 @@ export const trainer_data = [
     },
     {
         "key": "sich sorgen",
-        "sentence": "Die Eltern sorgen sich sehr **{um}** die Zukunft ihrer Kinder.",
+        "sentence": "Die Eltern sorgen sich sehr {um} die Zukunft ihrer Kinder.",
         "words": [
             "um",
             "für",
@@ -1261,7 +1261,7 @@ export const trainer_data = [
     },
     {
         "key": "sprechen",
-        "sentence": "Die Wissenschaftler sprechen **{über}** ihre neuen Forschungsergebnisse.",
+        "sentence": "Die Wissenschaftler sprechen {über} ihre neuen Forschungsergebnisse.",
         "words": [
             "über",
             "von",
@@ -1273,7 +1273,7 @@ export const trainer_data = [
     },
     {
         "key": "sterben",
-        "sentence": "Er ist leider **{an}** einer Lungenentzündung gestorben.",
+        "sentence": "Er ist leider {an} einer Lungenentzündung gestorben.",
         "words": [
             "an",
             "von",
@@ -1285,7 +1285,7 @@ export const trainer_data = [
     },
     {
         "key": "stimmen",
-        "sentence": "Die Fakten stimmen nicht **{mit}** der Realität überein.",
+        "sentence": "Die Fakten stimmen nicht {mit} der Realität überein.",
         "words": [
             "mit",
             "zu",
@@ -1297,7 +1297,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) streiten",
-        "sentence": "Die Geschwister streiten sich ständig **{um}** die Fernbedienung.",
+        "sentence": "Die Geschwister streiten sich ständig {um} die Fernbedienung.",
         "words": [
             "um",
             "über",
@@ -1309,7 +1309,7 @@ export const trainer_data = [
     },
     {
         "key": "tauschen",
-        "sentence": "Ich tausche mein altes Fahrrad **{gegen}** ein neues Mountainbike.",
+        "sentence": "Ich tausche mein altes Fahrrad {gegen} ein neues Mountainbike.",
         "words": [
             "gegen",
             "mit",
@@ -1321,7 +1321,7 @@ export const trainer_data = [
     },
     {
         "key": "teilhaben",
-        "sentence": "Jeder Mitarbeiter sollte **{an}** den Gewinnen teilhaben können.",
+        "sentence": "Jeder Mitarbeiter sollte {an} den Gewinnen teilhaben können.",
         "words": [
             "an",
             "mit",
@@ -1333,7 +1333,7 @@ export const trainer_data = [
     },
     {
         "key": "teilnehmen",
-        "sentence": "Ich nehme gerne **{an}** der Konferenz in Frankfurt teil.",
+        "sentence": "Ich nehme gerne {an} der Konferenz in Frankfurt teil.",
         "words": [
             "an",
             "mit",
@@ -1345,7 +1345,7 @@ export const trainer_data = [
     },
     {
         "key": "telefonieren",
-        "sentence": "Er telefoniert täglich **{mit}** seinen Geschäftspartnern im Ausland.",
+        "sentence": "Er telefoniert täglich {mit} seinen Geschäftspartnern im Ausland.",
         "words": [
             "mit",
             "über",
@@ -1357,7 +1357,7 @@ export const trainer_data = [
     },
     {
         "key": "träumen",
-        "sentence": "Sie träumt jede Nacht **{von}** einer Reise nach Südamerika.",
+        "sentence": "Sie träumt jede Nacht {von} einer Reise nach Südamerika.",
         "words": [
             "von",
             "über",
@@ -1369,7 +1369,7 @@ export const trainer_data = [
     },
     {
         "key": "sich treffen",
-        "sentence": "Wir treffen uns heute Abend **{mit}** unseren alten Schulfreunden.",
+        "sentence": "Wir treffen uns heute Abend {mit} unseren alten Schulfreunden.",
         "words": [
             "mit",
             "an",
@@ -1381,7 +1381,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) trennen",
-        "sentence": "Er trennt sich schweren Herzens **{von}** seiner wertvollen Uhrensammlung.",
+        "sentence": "Er trennt sich schweren Herzens {von} seiner wertvollen Uhrensammlung.",
         "words": [
             "von",
             "mit",
@@ -1393,7 +1393,7 @@ export const trainer_data = [
     },
     {
         "key": "übersetzen",
-        "sentence": "Sie übersetzt das Buch **{aus}** dem Französischen **{in}** das Deutsche.",
+        "sentence": "Sie übersetzt das Buch {aus} dem Französischen {in} das Deutsche.",
         "words": [
             "aus",
             "in",
@@ -1405,7 +1405,7 @@ export const trainer_data = [
     },
     {
         "key": "(sich) überzeugen",
-        "sentence": "Der Kunde überzeugt sich **{von}** der hohen Qualität des Produkts.",
+        "sentence": "Der Kunde überzeugt sich {von} der hohen Qualität des Produkts.",
         "words": [
             "von",
             "über",
@@ -1417,7 +1417,7 @@ export const trainer_data = [
     },
     {
         "key": "umgehen",
-        "sentence": "Er kann sehr gut **{mit}** schwierigen Situationen umgehen.",
+        "sentence": "Er kann sehr gut {mit} schwierigen Situationen umgehen.",
         "words": [
             "mit",
             "um",
@@ -1429,7 +1429,7 @@ export const trainer_data = [
     },
     {
         "key": "unterbrechen",
-        "sentence": "Bitte unterbrich mich nicht **{bei}** meinem Vortrag.",
+        "sentence": "Bitte unterbrich mich nicht {bei} meinem Vortrag.",
         "words": [
             "bei",
             "in",
@@ -1441,7 +1441,7 @@ export const trainer_data = [
     },
     {
         "key": "sich unterhalten",
-        "sentence": "Sie unterhalten sich lange **{über}** ihre gemeinsamen Erinnerungen.",
+        "sentence": "Sie unterhalten sich lange {über} ihre gemeinsamen Erinnerungen.",
         "words": [
             "über",
             "mit",
@@ -1453,7 +1453,7 @@ export const trainer_data = [
     },
     {
         "key": "sich unterscheiden",
-        "sentence": "Das neue Modell unterscheidet sich nur geringfügig **{von}** dem alten.",
+        "sentence": "Das neue Modell unterscheidet sich nur geringfügig {von} dem alten.",
         "words": [
             "von",
             "zu",
@@ -1465,7 +1465,7 @@ export const trainer_data = [
     },
     {
         "key": "unterstützen",
-        "sentence": "Wir unterstützen das Museum **{bei}** seiner Finanzierung.",
+        "sentence": "Wir unterstützen das Museum {bei} seiner Finanzierung.",
         "words": [
             "bei",
             "mit",
@@ -1477,7 +1477,7 @@ export const trainer_data = [
     },
     {
         "key": "sich verabreden",
-        "sentence": "Sie verabredet sich **{mit}** ihrem Kollegen **{zu}** einem Arbeitsessen.",
+        "sentence": "Sie verabredet sich {mit} ihrem Kollegen {zu} einem Arbeitsessen.",
         "words": [
             "mit",
             "zu",
@@ -1489,7 +1489,7 @@ export const trainer_data = [
     },
     {
         "key": "sich verabschieden",
-        "sentence": "Er verabschiedet sich herzlich **{von}** allen Gästen.",
+        "sentence": "Er verabschiedet sich herzlich {von} allen Gästen.",
         "words": [
             "von",
             "mit",
@@ -1501,7 +1501,7 @@ export const trainer_data = [
     },
     {
         "key": "verbinden",
-        "sentence": "Die neue Straße verbindet die Stadt **{mit}** dem Industriegebiet.",
+        "sentence": "Die neue Straße verbindet die Stadt {mit} dem Industriegebiet.",
         "words": [
             "mit",
             "an",
@@ -1513,7 +1513,7 @@ export const trainer_data = [
     },
     {
         "key": "verfügen",
-        "sentence": "Die Firma verfügt **{über}** modernste Technologie.",
+        "sentence": "Die Firma verfügt {über} modernste Technologie.",
         "words": [
             "über",
             "von",
@@ -1525,7 +1525,7 @@ export const trainer_data = [
     },
     {
         "key": "vergleichen",
-        "sentence": "Man kann die neue Software nicht **{mit}** der alten Version vergleichen.",
+        "sentence": "Man kann die neue Software nicht {mit} der alten Version vergleichen.",
         "words": [
             "mit",
             "zu",
@@ -1537,7 +1537,7 @@ export const trainer_data = [
     },
     {
         "key": "sich verlieben",
-        "sentence": "Er verliebt sich Hals über Kopf **{in}** seine neue Nachbarin.",
+        "sentence": "Er verliebt sich Hals über Kopf {in} seine neue Nachbarin.",
         "words": [
             "in",
             "an",
@@ -1549,7 +1549,7 @@ export const trainer_data = [
     },
     {
         "key": "sich verpflichten",
-        "sentence": "Sie verpflichtet sich **{zu}** mindestens zwei Jahren ehrenamtlicher Arbeit.",
+        "sentence": "Sie verpflichtet sich {zu} mindestens zwei Jahren ehrenamtlicher Arbeit.",
         "words": [
             "zu",
             "für",
@@ -1561,7 +1561,7 @@ export const trainer_data = [
     },
     {
         "key": "verschieben",
-        "sentence": "Wir verschieben den Termin **{auf}** nächste Woche Freitag.",
+        "sentence": "Wir verschieben den Termin {auf} nächste Woche Freitag.",
         "words": [
             "auf",
             "zu",
@@ -1573,7 +1573,7 @@ export const trainer_data = [
     },
     {
         "key": "sich versichern",
-        "sentence": "Sie versichert sich umfassend **{gegen}** alle Reisekrankheiten.",
+        "sentence": "Sie versichert sich umfassend {gegen} alle Reisekrankheiten.",
         "words": [
             "gegen",
             "für",
@@ -1585,7 +1585,7 @@ export const trainer_data = [
     },
     {
         "key": "sich versöhnen",
-        "sentence": "Der Bruder versöhnt sich nach langem Streit **{mit}** seiner Schwester.",
+        "sentence": "Der Bruder versöhnt sich nach langem Streit {mit} seiner Schwester.",
         "words": [
             "mit",
             "an",
@@ -1597,7 +1597,7 @@ export const trainer_data = [
     },
     {
         "key": "verstoßen",
-        "sentence": "Die Tat verstößt klar **{gegen}** die allgemeinen Geschäftsbedingungen.",
+        "sentence": "Die Tat verstößt klar {gegen} die allgemeinen Geschäftsbedingungen.",
         "words": [
             "gegen",
             "mit",
@@ -1609,7 +1609,7 @@ export const trainer_data = [
     },
     {
         "key": "vertrauen",
-        "sentence": "Er vertraut blind **{auf}** das Urteilsvermögen seiner Kollegen.",
+        "sentence": "Er vertraut blind {auf} das Urteilsvermögen seiner Kollegen.",
         "words": [
             "auf",
             "an",
@@ -1621,7 +1621,7 @@ export const trainer_data = [
     },
     {
         "key": "verwechseln",
-        "sentence": "Ich verwechsle ihn oft **{mit}** seinem Zwillingsbruder.",
+        "sentence": "Ich verwechsle ihn oft {mit} seinem Zwillingsbruder.",
         "words": [
             "mit",
             "zu",
@@ -1633,7 +1633,7 @@ export const trainer_data = [
     },
     {
         "key": "verweisen",
-        "sentence": "Der Dozent verweist die Studenten **{auf}** die Literaturliste.",
+        "sentence": "Der Dozent verweist die Studenten {auf} die Literaturliste.",
         "words": [
             "auf",
             "zu",
@@ -1645,7 +1645,7 @@ export const trainer_data = [
     },
     {
         "key": "verzichten",
-        "sentence": "Sie verzichtet ab sofort **{auf}** alle zuckerhaltigen Getränke.",
+        "sentence": "Sie verzichtet ab sofort {auf} alle zuckerhaltigen Getränke.",
         "words": [
             "auf",
             "zu",
@@ -1657,7 +1657,7 @@ export const trainer_data = [
     },
     {
         "key": "verzweifeln",
-        "sentence": "Der Forscher verzweifelt **{an}** der Komplexität des Problems.",
+        "sentence": "Der Forscher verzweifelt {an} der Komplexität des Problems.",
         "words": [
             "an",
             "über",
@@ -1669,7 +1669,7 @@ export const trainer_data = [
     },
     {
         "key": "sich vorbereiten",
-        "sentence": "Wir müssen uns gut **{auf}** die bevorstehende Präsentation vorbereiten.",
+        "sentence": "Wir müssen uns gut {auf} die bevorstehende Präsentation vorbereiten.",
         "words": [
             "auf",
             "für",
@@ -1681,7 +1681,7 @@ export const trainer_data = [
     },
     {
         "key": "vorkommen",
-        "sentence": "Solche Missverständnisse kommen leider häufig **{in}** diesem Bereich vor.",
+        "sentence": "Solche Missverständnisse kommen leider häufig {in} diesem Bereich vor.",
         "words": [
             "in",
             "an",
@@ -1693,7 +1693,7 @@ export const trainer_data = [
     },
     {
         "key": "warnen",
-        "sentence": "Ich warne dich ausdrücklich **{vor}** dieser gefährlichen Situation.",
+        "sentence": "Ich warne dich ausdrücklich {vor} dieser gefährlichen Situation.",
         "words": [
             "vor",
             "über",
@@ -1705,7 +1705,7 @@ export const trainer_data = [
     },
     {
         "key": "warten",
-        "sentence": "Wir warten jetzt schon seit einer Stunde **{auf}** das Ergebnis.",
+        "sentence": "Wir warten jetzt schon seit einer Stunde {auf} das Ergebnis.",
         "words": [
             "auf",
             "für",
@@ -1717,7 +1717,7 @@ export const trainer_data = [
     },
     {
         "key": "werben",
-        "sentence": "Die Firma wirbt aggressiv **{für}** ihr neues Produkt.",
+        "sentence": "Die Firma wirbt aggressiv {für} ihr neues Produkt.",
         "words": [
             "für",
             "um",
@@ -1729,7 +1729,7 @@ export const trainer_data = [
     },
     {
         "key": "wetten",
-        "sentence": "Er wettet eine Kiste Bier **{um}** den Ausgang des Fußballspiels.",
+        "sentence": "Er wettet eine Kiste Bier {um} den Ausgang des Fußballspiels.",
         "words": [
             "um",
             "auf",
@@ -1741,7 +1741,7 @@ export const trainer_data = [
     },
     {
         "key": "wirken",
-        "sentence": "Das neue Medikament wirkt sofort **{gegen}** die Kopfschmerzen.",
+        "sentence": "Das neue Medikament wirkt sofort {gegen} die Kopfschmerzen.",
         "words": [
             "gegen",
             "auf",
@@ -1753,7 +1753,7 @@ export const trainer_data = [
     },
     {
         "key": "sich wundern",
-        "sentence": "Ich wundere mich sehr **{über}** seine unerwartete Kündigung.",
+        "sentence": "Ich wundere mich sehr {über} seine unerwartete Kündigung.",
         "words": [
             "über",
             "von",
@@ -1765,7 +1765,7 @@ export const trainer_data = [
     },
     {
         "key": "zweifeln",
-        "sentence": "Sie zweifelt ernsthaft **{an}** der Richtigkeit dieser Zahlen.",
+        "sentence": "Sie zweifelt ernsthaft {an} der Richtigkeit dieser Zahlen.",
         "words": [
             "an",
             "über",
