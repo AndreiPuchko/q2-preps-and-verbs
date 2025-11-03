@@ -1,0 +1,155 @@
+Verb,Satz
+abhängen,Das Ergebnis hängt {von} deiner Anstrengung ab.
+(sich) abmelden,Du musst dich {von} der Veranstaltung abmelden.
+ändern,Er ändert seine Meinung {über} das Projekt.
+anfangen,Wir fangen {mit} der Arbeit pünktlich an.
+sich ängstigen,Sie ängstigt sich {vor} großen Hunden.
+(sich) anmelden,Ich melde mich {zu} dem Kurs an.
+(sich) anpassen,Man muss sich {an} die neue Umgebung anpassen.
+anrufen,Ruf mich bitte {bei} Problemen an. 
+anrufen,Ruf mich {nach} der Arbeit an.
+antworten,Die Studentin antwortet {auf} die Frage des Professors.
+arbeiten,Sie arbeitet {an} einem neuen Buch.
+sich ärgern,Er ärgert sich {über} den verlorenen Schlüssel.
+sich aufregen,Reg dich nicht {über} Kleinigkeiten auf!
+ausbrechen,Die Krankheit ist {in} der Bevölkerung ausgebrochen.
+äußern,Der Zeuge äußert sich nicht {zu} den Vorfällen.
+ausgeben,Er gibt viel Geld {für} Hobbys aus.
+ausgehen,Das Licht geht {in} diesem Raum oft aus. 
+ausgehen,Wir gehen heute Abend {mit} Freunden aus.
+sich ausruhen,Ich ruhe mich {von} der langen Reise aus.
+sich austauschen,Sie tauschen sich {über} ihre Erfahrungen aus.
+sich auszeichnen,Er zeichnet sich {durch} Fleiß und Intelligenz aus.
+basieren,Die Theorie basiert {auf} neuen Forschungsergebnissen.
+sich bedanken,Peter bedankt sich {für} den Film.
+sich befassen,Die Wissenschaftler befassen sich {mit} der Klimakrise.
+befreien,Die Soldaten befreien das Dorf {von} der Belagerung.
+sich begeistern,Er begeistert sich {für} klassische Musik.
+beginnen,Wir beginnen {mit} dem Projekt sofort.
+behandeln,Die Ärztin behandelt den Patienten {gegen} eine Erkältung.
+beitragen,Jeder sollte etwas {zu} einem besseren Klima beitragen.
+sich beklagen,Sie beklagt sich {über} den schlechten Service.
+sich bemühen,Er bemüht sich {um} eine bessere Note.
+berichten,Die Zeitung berichtet {über} das jüngste Erdbeben.
+(sich) beschäftigen,Er beschäftigt sich viel {mit} alten Sprachen.
+sich beschweren,Der Gast beschwert sich {bei} der Rezeption. 
+sich beschweren,Der Gast beschwert sich {über} das Zimmer.
+bestellen,Er bestellt Pizza {bei} seinem Lieblingslieferdienst.
+sich beteiligen,Die Firma beteiligt sich {an} der Messe.
+sich bewerben,Sie bewirbt sich {um} eine Stelle als Lehrerin.
+sich beziehen,Die Aussage bezieht sich {auf} den vorherigen Absatz.
+bitten,Ich bitte dich {um} deine Hilfe.
+danken,Ich danke dir {für} die Einladung.
+denken,Er denkt oft {an} seine Heimat.
+demonstrieren,Die Menschen demonstrieren {gegen} die neuen Gesetze.
+diskutieren,Wir diskutieren {über} die neuesten Nachrichten.
+sich eignen,Das Tuch eignet sich gut {für} diesen Zweck.
+(sich) einarbeiten,Er arbeitet sich schnell {in} die neue Software ein.
+einladen,Wir laden dich herzlich {zu} unserer Party ein.
+einstellen,Die Firma stellt einen neuen Mitarbeiter {als} Manager ein. 
+einstellen,Die Produktion wird {wegen} technischer Probleme eingestellt.
+einziehen,Sie ziehen nächste Woche {in} die neue Wohnung ein.
+sich empören,Sie empören sich {über} die Ungerechtigkeit.
+sich engagieren,Er engagiert sich {für} den Tierschutz.
+(sich) entfernen,Er entfernt sich langsam {von} seinem Auto.
+sich entscheiden,Sie entscheidet sich {für} das blaue Kleid.
+sich entschließen,Er entschließt sich {zu} einer beruflichen Veränderung.
+sich entschuldigen,Ich entschuldige mich {für} mein Verhalten.
+sich entwickeln,Die Stadt entwickelt sich schnell {zu} einem Technologiezentrum.
+sich erhoffen,Er erhofft sich viel {von} dieser Investition.
+sich erholen,Sie erholt sich gerade {von} der Grippe.
+(sich) erinnern,Er erinnert sich nicht {an} den Traum.
+sich erkundigen,Ich erkundige mich {nach} dem Weg zum Bahnhof.
+erschrecken,Die Kinder erschrecken {vor} dem lauten Knall.
+erzählen,Erzähl mir mehr {über} deinen Urlaub.
+forschen,Sie forscht {nach} einer neuen Heilmethode.
+fragen,Frag ihn bitte {nach} seiner Meinung.
+sich freuen (zukünftig),Wir freuen uns {auf} das Wochenende.
+sich freuen (gegenwärtig),Sie freut sich {über} das Geschenk.
+sich freuen (vergangen),Ich habe mich sehr {über} deinen Besuch gefreut.
+gefallen,Der Mantel gefällt mir {wegen} der Farbe.
+gelten,Diese Regel gilt nur {für} Erwachsene.
+gewinnen,Er gewinnt die Goldmedaille {bei} den Olympischen Spielen.
+sich gewöhnen,Er hat sich schnell {an} das kalte Wetter gewöhnt.
+glauben,Ich glaube fest {an} seine Unschuld.
+gratulieren,Ich gratuliere dir {zu} deinem Erfolg.
+greifen,Er greift {nach} der Tasse.
+handeln (Thema),Der Film handelt {von} einer romantischen Geschichte.
+handeln (Maßnahme),Die Regierung handelt {gegen} die hohe Inflation.
+sich handeln,Es handelt sich {um} ein sehr seltenes Exemplar.
+helfen,Kannst du mir bitte {bei} den Hausaufgaben helfen?
+hinweisen,Ich weise dich {auf} die Gefahren hin.
+hoffen,Wir hoffen {auf} besseres Wetter morgen.
+sich identifizieren,Er identifiziert sich stark {mit} seiner Arbeitsgruppe.
+sich informieren,Informiere dich bitte {über} die neuen Öffnungszeiten.
+sich integrieren,Sie integriert sich gut {in} das neue Team.
+sich interessieren,Er interessiert sich {für} alte Geschichte.
+investieren,Die Firma investiert viel Geld {in} erneuerbare Energien.
+kämpfen,Sie kämpfen {um} ihre Rechte.
+klagen,Er klagt {über} starke Kopfschmerzen.
+kommunizieren,Wir kommunizieren regelmäßig {mit} unseren Partnern.
+sich konfrontieren,Er konfrontiert sich {mit} seinen Ängsten.
+sich konzentrieren,Konzentriere dich bitte {auf} deine Arbeit.
+mangeln,Es mangelt uns {an} Zeit.
+sich melden,"Melde dich bitte {bei} mir, wenn du angekommen bist."
+sich messen,Sie misst sich {mit} den Besten im Wettbewerb.
+nachfragen,Er fragt immer wieder {nach} dem genauen Termin.
+nützen,Das Werkzeug nützt dir nichts {bei} dieser Aufgabe.
+sich orientieren,Er orientiert sich {an} den Anweisungen des Chefs.
+passen,Die Schuhe passen gut {zu} dem Kleid.
+profitieren,Sie profitieren {von} den niedrigeren Steuern.
+protestieren,Die Studenten protestieren {gegen} die hohen Gebühren.
+raten,Ich rate dir {zu} mehr Geduld.
+reagieren,Sie reagiert schnell {auf} die Nachricht.
+reden,Er redet gerne {über} das Wetter.
+reizen,Der Duft reizt ihn {zu} einem Kauf.
+(sich) retten,Er rettete sich {aus} dem brennenden Haus.
+sagen,Sie sagt nichts {zu} den Anschuldigungen.
+schmecken,Die Suppe schmeckt {nach} Knoblauch.
+schreiben,Er schreibt einen Brief {an} seine Großeltern.
+sensibilisieren,Wir müssen die Menschen {für} den Umweltschutz sensibilisieren.
+sich sorgen,Sie sorgt sich {um} ihre Gesundheit.
+sprechen,Wir sprechen {über} die bevorstehende Prüfung.
+sterben,Er ist {an} einer schweren Krankheit gestorben.
+stimmen,Die Angaben stimmen nicht {mit} der Realität überein.
+(sich) streiten,Die Kinder streiten sich {um} das Spielzeug.
+tauschen,Er tauscht seine Briefmarken {gegen} seltene Münzen.
+teilhaben,Alle Mitarbeiter haben {an} der Entscheidung teilgehabt.
+teilnehmen,Möchtest du {an} dem Seminar teilnehmen?
+telefonieren,Ich telefoniere oft {mit} meiner Schwester.
+träumen,Er träumt {von} einem eigenen Haus am Meer.
+sich treffen,Wir treffen uns morgen {bei} ihm. 
+sich treffen,Wir treffen uns morgen {mit} unseren Freunden.
+(sich) trennen,Sie trennt sich {von} ihrem alten Handy.
+übersetzen,Sie übersetzt den Text {aus} dem Deutschen {ins} Englische.
+(sich) überzeugen,Er überzeugt sich {von} der Qualität des Produkts.
+umgehen,Er kann gut {mit} schwierigen Kunden umgehen.
+unterbrechen,Bitte unterbrich mich nicht {bei} meinem Vortrag.
+sich unterhalten,Sie unterhalten sich {über} ihre Reisepläne.
+sich unterscheiden,Er unterscheidet sich {von} seinem Bruder {durch} seine Größe.
+unterstützen,Wir unterstützen ihn {bei} seiner Bewerbung.
+sich verabreden,Sie verabredet sich {mit} ihrer Freundin {zu} einem Kaffee.
+sich verabschieden,Er verabschiedet sich {von} seinen Kollegen.
+verbinden,Die Brücke verbindet die Stadt {mit} dem Ufer.
+verfügen,Er verfügt {über} ein großes Vermögen.
+vergleichen,Man vergleicht das Auto {mit} einem Sportwagen.
+sich verlieben,Er verliebt sich {in} seine neue Nachbarin.
+sich verpflichten,Sie verpflichtet sich {zu} einem Jahr ehrenamtlicher Arbeit.
+verschieben,Wir verschieben den Termin {auf} nächsten Dienstag.
+sich versichern,Er versichert sich {gegen} alle möglichen Schäden.
+sich versöhnen,Sie versöhnt sich {mit} ihrer besten Freundin.
+verstoßen,Die Tat verstößt {gegen} das Gesetz.
+vertrauen,Er vertraut {auf} die Ehrlichkeit seines Freundes.
+verwechseln,Ich verwechsle ihn oft {mit} seinem Zwillingsbruder.
+verweisen,Der Lehrer verweist den Schüler {auf} die Regeln.
+verzichten,Ich verzichte {auf} das Dessert.
+verzweifeln,Sie verzweifelt {an} der Komplexität der Aufgabe.
+sich vorbereiten,Sie bereitet sich {auf} die Prüfung vor.
+vorkommen,Dieses Problem kommt oft {in} der Praxis vor.
+warnen,Ich warne dich {vor} dieser Gefahr.
+warten,Wir warten {auf} den Bus.
+werben,Die Firma wirbt {für} ihr neues Produkt.
+wetten,Er wettet {um} eine Flasche Wein.
+wirken,Das Medikament wirkt schnell {gegen} die Schmerzen.
+sich wundern,Ich wundere mich {über} seine plötzliche Abreise.
+zweifeln,Er zweifelt {an} der Richtigkeit der Informationen.
