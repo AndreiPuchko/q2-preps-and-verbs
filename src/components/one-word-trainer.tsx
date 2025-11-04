@@ -42,6 +42,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     );
     const [selectedWord, setSelectedWord] = React.useState<string>("");
     const [isChecked, setIsChecked] = React.useState(false);
+    const [shuffledWords, setShuffledWords] = React.useState<string[]>([]);
     
     // Initialize state from cookie
     const [passCount, setPassCount] = React.useState(() => loadStatsFromCookie().passCount);
@@ -112,12 +113,22 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
         }
         // Proceed to next exercise
         setPassCount((prev: number) => prev + 1);
-        setCurrentIndex(getRandomIndex());
+        const nextIndex = getRandomIndex();
+        setCurrentIndex(nextIndex);
+        // Shuffle words for the next question
+        setShuffledWords([...data[nextIndex].words].sort(() => Math.random() - 0.5));
         setSelectedWord("");
         setIsChecked(false);
     };
 
     const ex = data[currentIndex];
+    // Initialize shuffled words if empty (first render)
+    React.useEffect(() => {
+        if (shuffledWords.length === 0) {
+            setShuffledWords([...ex.words].sort(() => Math.random() - 0.5));
+        }
+    }, [ex.words, shuffledWords.length]);
+
     let answer: string = "";
 
     // Process the sentence once - extract answer and split into parts
@@ -160,6 +171,8 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
         // Reset statistics
         setAnswers({});
         setPassCount(0);
+        // Shuffle words for the current question
+        setShuffledWords([...data[currentIndex].words].sort(() => Math.random() - 0.5));
         // Save empty stats to cookie
         saveStatsToCookie({}, 0);
         App.instance?.showMsg("Statistik zurückgesetzt", "info");
@@ -192,7 +205,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                 )}
             </div>
             <div className="word-pool">
-                {[...ex.words].sort(() => Math.random() - 0.5).map((w, index) => (
+                {shuffledWords.map((w, index) => (
                     <div
                         key={`${w}-${index}`}
                         className="word"
