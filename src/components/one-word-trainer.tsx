@@ -192,9 +192,9 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                 )}
             </div>
             <div className="word-pool">
-                {ex.words.map((w, index) => (
+                {[...ex.words].sort(() => Math.random() - 0.5).map((w, index) => (
                     <div
-                        key={index}
+                        key={`${w}-${index}`}
                         className="word"
                         onClick={() => handleWordClick(w)}
                     >
