@@ -76,3 +76,11 @@ body {
 .full-screen {
   border-radius: 0px;
 }
+
+
+.MainMenuLoginButton,
+.StepBackButton,
+.HomeButton {
+  display: none;
+}
+
