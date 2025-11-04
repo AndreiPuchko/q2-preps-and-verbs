@@ -373,7 +373,7 @@ export const trainer_data = [
     },
     {
         "key": "sich beschweren",
-        "sentence": "Sie beschwert sich {bei} der Managerin {wegen} der defekten Klimaanlage.",
+        "sentence": "Sie beschwert sich {bei} der Managerin.",
         "words": [
             "bei",
             "über",
@@ -1393,7 +1393,7 @@ export const trainer_data = [
     },
     {
         "key": "übersetzen",
-        "sentence": "Sie übersetzt das Buch {aus} dem Französischen {in} das Deutsche.",
+        "sentence": "Sie übersetzt das Buch {aus} dem Französischen.",
         "words": [
             "aus",
             "in",
@@ -1477,7 +1477,7 @@ export const trainer_data = [
     },
     {
         "key": "sich verabreden",
-        "sentence": "Sie verabredet sich {mit} ihrem Kollegen {zu} einem Arbeitsessen.",
+        "sentence": "Sie verabredet sich {mit} ihrem Kollegen.",
         "words": [
             "mit",
             "zu",
