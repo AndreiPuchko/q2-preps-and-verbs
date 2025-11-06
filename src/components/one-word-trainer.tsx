@@ -64,7 +64,20 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     }, [answers]);
 
     const getRandomIndex = () => {
-        // Get new random index different from current one
+        // Every 5th attempt should be an unanswered exercise if available
+        if (passCount > 0 && (passCount + 1) % 5 === 0) {
+            const unansweredIndices = data.map((_, i) => i).filter(i => !answers[i]);
+            if (unansweredIndices.length > 0) {
+                // Pick a random unanswered exercise that's not the current one
+                const availableIndices = unansweredIndices.filter(i => i !== currentIndex);
+                if (availableIndices.length > 0) {
+                    return availableIndices[Math.floor(Math.random() * availableIndices.length)];
+                }
+                // If current index is the only unanswered one, still use regular selection
+            }
+        }
+
+        // Regular random selection logic
         let newIndex;
         let attempts = 0;
         const maxAttempts = data.length * 2; // Prevent infinite loop
@@ -105,11 +118,15 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     const handleNext = () => {
         if (selectedWord && !isChecked) {
             const isCorrect = handleCheck();
-            App.instance?.showMsg(
+            const msgForm = App.instance?.showMsg(
                 ex.sentence + ":\n\n" +
                 (isCorrect ? "Richtig! 👍" : `Falsch! Die richtige Antwort ist: ${answer}`),
                 isCorrect ? "success" : "error"
             );
+            if (msgForm) {
+                setTimeout(() => {
+                    msgForm.closeDialog()}, 2000);
+            }
         }
         // Proceed to next exercise
         setPassCount((prev: number) => prev + 1);
