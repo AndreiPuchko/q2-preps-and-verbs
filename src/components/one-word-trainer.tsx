@@ -43,7 +43,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     const [selectedWord, setSelectedWord] = React.useState<string>("");
     const [isChecked, setIsChecked] = React.useState(false);
     const [shuffledWords, setShuffledWords] = React.useState<string[]>([]);
-    
+
     // Initialize state from cookie
     const [passCount, setPassCount] = React.useState(() => loadStatsFromCookie().passCount);
     const [answers, setAnswers] = React.useState<Record<number, {
@@ -115,17 +115,18 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
         } while (true);
     };
 
-    const handleNext = () => {
+    const handleNext = async () => {
         if (selectedWord && !isChecked) {
             const isCorrect = handleCheck();
-            const msgForm = App.instance?.showMsg(
+            const msgForm = await App.instance?.showMsg(
                 ex.sentence + ":\n\n" +
                 (isCorrect ? "Richtig! 👍" : `Falsch! Die richtige Antwort ist: ${answer}`),
                 isCorrect ? "success" : "error"
             );
             if (msgForm) {
                 setTimeout(() => {
-                    msgForm.closeDialog()}, 2000);
+                    msgForm.closeDialog()
+                }, 2000);
             }
         }
         // Proceed to next exercise
@@ -163,6 +164,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
 
     const handleWordClick = (word: string) => {
         setSelectedWord(word);
+        if (!isChecked) handleCheck();
     };
 
     const handleCheck = () => {
@@ -233,12 +235,6 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                 ))}
             </div>
             <div className="buttons">
-                <button
-                    onClick={handleCheck}
-                    disabled={isChecked || !selectedWord}
-                >
-                    Check
-                </button>
                 <button onClick={handleNext}>Next</button>
                 <button onClick={handleReset}>Reset</button>
             </div>
