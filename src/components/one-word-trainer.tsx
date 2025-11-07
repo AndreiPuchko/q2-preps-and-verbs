@@ -164,8 +164,14 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
 
     const handleWordClick = (word: string) => {
         setSelectedWord(word);
-        if (!isChecked) handleCheck();
     };
+
+    // Handle check when selectedWord changes
+    React.useEffect(() => {
+        if (selectedWord && !isChecked) {
+            handleCheck();
+        }
+    }, [selectedWord]); // Only run when selectedWord changes
 
     const handleCheck = () => {
         setIsChecked(true);
