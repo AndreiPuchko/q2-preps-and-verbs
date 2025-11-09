@@ -10,10 +10,11 @@
     border: 1px solid var(--form-border);
 }
 
-.exercise-container h2 {
+.exercise-container h3 {
     padding: 0;
-    font-size: 1.0rem;
-    font-weight: 900;
+    /* font-size: 1.0rem; */
+    font-weight: 600;
+    margin: 0;
 }
 
 .stats {
@@ -150,4 +151,19 @@
 
 .btn-reset:hover {
     background-color: #ccc;
+}
+
+.error-message {
+    margin-top: 1rem;
+    background: rgb(245, 196, 204);
+    border-radius: 0.4rem;
+    border: 1px solid gray;
+    white-space: normal;
+}
+
+.dark .error-message {
+    background: rgb(41, 5, 5);
+    color: wheat;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
 }

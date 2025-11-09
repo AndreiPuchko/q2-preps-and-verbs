@@ -207,7 +207,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
 
     return (
         <div className="exercise-container">
-            <h2>{ex.key}</h2>
+            <h3>{ex.key}</h3>
             <div className="stats">
                 <span>Correct: {stats.correct}</span>
                 <span>Wrong: {stats.wrong}</span>
@@ -244,6 +244,9 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                 <button onClick={handleNext}>Next</button>
                 <button onClick={handleReset}>Reset</button>
             </div>
+            {selectedWord && selectedWord !== answer ? <div className="error-message">
+                Du hast einen Fehler gemacht. Versuch es noch mal.
+            </div> : null}
 
         </div>
     );
