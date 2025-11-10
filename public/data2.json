@@ -1,0 +1,242 @@
+[
+    {
+        "key": "(sich) beschäftigen",
+        "sentence": "Der neue Mitarbeiter beschäftigt sich intensiv {mit} der Erstellung des Jahresberichts.",
+        "preps_list": [
+            "mit",
+            "über",
+            "für",
+            "an",
+            "von",
+            "in"
+        ]
+    },
+    {
+        "key": "(sich) beschäftigen",
+        "sentence": "Sie {beschäftigt} sich auch in ihrer Freizeit mit Fragen der Logistik.",
+        "preps_list": [
+            "beschäftigt",
+            "beschäftigen",
+            "beschäftigst",
+            "beschäftigte",
+            "beschäftigen",
+            "beschäftigst"
+        ]
+    },
+    {
+        "key": "sich beschweren (bei)",
+        "sentence": "Die Kunden beschweren sich {bei} der Hotline über die Wartezeit.",
+        "preps_list": [
+            "bei",
+            "über",
+            "mit",
+            "von",
+            "zu",
+            "an"
+        ]
+    },
+    {
+        "key": "sich beschweren (über)",
+        "sentence": "Der Mitarbeiter beschwert sich beim Betriebsrat {über} die neuen Arbeitszeiten.",
+        "preps_list": [
+            "über",
+            "mit",
+            "an",
+            "von",
+            "zu",
+            "für"
+        ]
+    },
+    {
+        "key": "bestellen",
+        "sentence": "Wir bestellen die Materialien immer {bei} einem regionalen Zulieferer.",
+        "preps_list": [
+            "bei",
+            "über",
+            "zu",
+            "mit",
+            "von",
+            "an"
+        ]
+    },
+    {
+        "key": "bestellen",
+        "sentence": "Die Waren {müssen} pünktlich zum Monatsende bestellt werden.",
+        "preps_list": [
+            "müssen",
+            "können",
+            "sollen",
+            "wollen",
+            "dürfen",
+            "sollen"
+        ]
+    },
+    {
+        "key": "sich beteiligen",
+        "sentence": "Viele Kollegen beteiligen sich {an} den freiwilligen Sportaktivitäten des Teams.",
+        "preps_list": [
+            "an",
+            "mit",
+            "zu",
+            "für",
+            "über",
+            "von"
+        ]
+    },
+    {
+        "key": "sich beteiligen",
+        "sentence": "Wer sich {nicht} beteiligt, kann die Ergebnisse nicht beeinflussen.",
+        "preps_list": [
+            "nicht",
+            "kaum",
+            "gern",
+            "einfach",
+            "heute",
+            "sicher"
+        ]
+    },
+    {
+        "key": "sich bewerben (um)",
+        "sentence": "Er bewirbt sich derzeit {um} eine Stelle als Projektleiter in Berlin.",
+        "preps_list": [
+            "um",
+            "für",
+            "auf",
+            "an",
+            "mit",
+            "zu"
+        ]
+    },
+    {
+        "key": "sich bewerben (bei)",
+        "sentence": "Sie bewirbt sich {bei} verschiedenen großen Ingenieurbüros in ganz Deutschland.",
+        "preps_list": [
+            "bei",
+            "um",
+            "auf",
+            "an",
+            "mit",
+            "zu"
+        ]
+    },
+    {
+        "key": "sich beziehen",
+        "sentence": "Meine Frage bezieht sich direkt {auf} das in der E-Mail genannte Dokument.",
+        "preps_list": [
+            "auf",
+            "zu",
+            "mit",
+            "über",
+            "an",
+            "von"
+        ]
+    },
+    {
+        "key": "sich beziehen",
+        "sentence": "Ich {beziehe} mich auf Ihr Stellenangebot vom letzten Montag.",
+        "preps_list": [
+            "beziehe",
+            "bezieht",
+            "beziehen",
+            "bezog",
+            "bezogen",
+            "beziehen"
+        ]
+    },
+    {
+        "key": "bitten (Präp)",
+        "sentence": "Ich möchte Sie höflich {um} die Übermittlung der fehlenden Unterlagen bitten.",
+        "preps_list": [
+            "um",
+            "für",
+            "zu",
+            "mit",
+            "an",
+            "von"
+        ]
+    },
+    {
+        "key": "bitten (Verb)",
+        "sentence": "Wir {bitten} unsere Kunden um Verständnis für die Verzögerung.",
+        "preps_list": [
+            "bitten",
+            "bittest",
+            "bittet",
+            "bat",
+            "gebeten",
+            "baten"
+        ]
+    },
+    {
+        "key": "danken",
+        "sentence": "Ich danke Ihnen herzlich {für} die schnelle Beantwortung meiner Anfrage.",
+        "preps_list": [
+            "für",
+            "über",
+            "mit",
+            "an",
+            "von",
+            "zu"
+        ]
+    },
+    {
+        "key": "danken",
+        "sentence": "Der Chef dankt dem gesamten Team für {seinen} Einsatz.",
+        "preps_list": [
+            "seinen",
+            "ihren",
+            "ihr",
+            "sein",
+            "unseren",
+            "deinen"
+        ]
+    },
+    {
+        "key": "denken (Präp)",
+        "sentence": "Bitte denken Sie bei der Kostenplanung auch {an} unerwartete Nebenkosten.",
+        "preps_list": [
+            "an",
+            "über",
+            "von",
+            "in",
+            "mit",
+            "zu"
+        ]
+    },
+    {
+        "key": "denken (Nomen)",
+        "sentence": "Ihr kritisches {Denken} hilft dem Team, Fehler frühzeitig zu erkennen.",
+        "preps_list": [
+            "Denken",
+            "Handeln",
+            "Sprechen",
+            "Schreiben",
+            "Lesen",
+            "Wissen"
+        ]
+    },
+    {
+        "key": "demonstrieren",
+        "sentence": "Die Gewerkschaftsmitglieder demonstrieren {gegen} die geplante Lohnkürzung.",
+        "preps_list": [
+            "gegen",
+            "für",
+            "zu",
+            "mit",
+            "an",
+            "von"
+        ]
+    },
+    {
+        "key": "demonstrieren",
+        "sentence": "Der IT-Spezialist muss die Funktion der neuen Software {vor} den Nutzern demonstrieren.",
+        "preps_list": [
+            "vor",
+            "hinter",
+            "neben",
+            "in",
+            "mit",
+            "zu"
+        ]
+    }
+]
