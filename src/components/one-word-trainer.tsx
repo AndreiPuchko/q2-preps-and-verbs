@@ -189,18 +189,21 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
         return isCorrect;
     };
 
-    const handleReset = () => {
+    const handleReset = async () => {
         // Reset current exercise state
-        setIsChecked(false);
-        setSelectedWord("");
-        // Reset statistics
-        setAnswers({});
-        setPassCount(0);
-        // Shuffle words for the current question
-        setShuffledWords([...data[currentIndex].words].sort(() => Math.random() - 0.5));
-        // Save empty stats to cookie
-        saveStatsToCookie({}, 0);
-        App.instance?.showMsg("Statistik zurückgesetzt", "info");
+        const ask = await App.instance?.showMsg("Darf ich die Statistik zurücksetzten?", "Question", ["Ok", "Cancel"]);
+        await ask?.waitForClose();
+        if (ask?.payload["button"] === 0) {
+            setIsChecked(false);
+            setSelectedWord("");
+            // Reset statistics
+            setAnswers({});
+            setPassCount(0);
+            // Shuffle words for the current question
+            setShuffledWords([...data[currentIndex].words].sort(() => Math.random() - 0.5));
+            // Save empty stats to cookie
+            saveStatsToCookie({}, 0);
+        }
     };
 
     const sentenceParts = processSentence(ex.sentence);
