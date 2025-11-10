@@ -1,0 +1,242 @@
+[
+    {
+        "key": "(sich) beschäftigen",
+        "sentence": "Der neue Mitarbeiter beschäftigt sich intensiv {mit} der Erstellung des Jahresberichts.",
+        "words": [
+            "mit",
+            "über",
+            "für",
+            "an",
+            "von",
+            "in"
+        ]
+    },
+    {
+        "key": "(sich) beschäftigen",
+        "sentence": "Sie {beschäftigt} sich auch in ihrer Freizeit mit Fragen der Logistik.",
+        "words": [
+            "beschäftigt",
+            "beschäftigen",
+            "beschäftigst",
+            "beschäftigte",
+            "beschäftigen",
+            "beschäftigst"
+        ]
+    },
+    {
+        "key": "sich beschweren (bei)",
+        "sentence": "Die Kunden beschweren sich {bei} der Hotline über die Wartezeit.",
+        "words": [
+            "bei",
+            "über",
+            "mit",
+            "von",
+            "zu",
+            "an"
+        ]
+    },
+    {
+        "key": "sich beschweren (über)",
+        "sentence": "Der Mitarbeiter beschwert sich beim Betriebsrat {über} die neuen Arbeitszeiten.",
+        "words": [
+            "über",
+            "mit",
+            "an",
+            "von",
+            "zu",
+            "für"
+        ]
+    },
+    {
+        "key": "bestellen",
+        "sentence": "Wir bestellen die Materialien immer {bei} einem regionalen Zulieferer.",
+        "words": [
+            "bei",
+            "über",
+            "zu",
+            "mit",
+            "von",
+            "an"
+        ]
+    },
+    {
+        "key": "bestellen",
+        "sentence": "Die Waren {müssen} pünktlich zum Monatsende bestellt werden.",
+        "words": [
+            "müssen",
+            "können",
+            "sollen",
+            "wollen",
+            "dürfen",
+            "sollen"
+        ]
+    },
+    {
+        "key": "sich beteiligen",
+        "sentence": "Viele Kollegen beteiligen sich {an} den freiwilligen Sportaktivitäten des Teams.",
+        "words": [
+            "an",
+            "mit",
+            "zu",
+            "für",
+            "über",
+            "von"
+        ]
+    },
+    {
+        "key": "sich beteiligen",
+        "sentence": "Wer sich {nicht} beteiligt, kann die Ergebnisse nicht beeinflussen.",
+        "words": [
+            "nicht",
+            "kaum",
+            "gern",
+            "einfach",
+            "heute",
+            "sicher"
+        ]
+    },
+    {
+        "key": "sich bewerben (um)",
+        "sentence": "Er bewirbt sich derzeit {um} eine Stelle als Projektleiter in Berlin.",
+        "words": [
+            "um",
+            "für",
+            "auf",
+            "an",
+            "mit",
+            "zu"
+        ]
+    },
+    {
+        "key": "sich bewerben (bei)",
+        "sentence": "Sie bewirbt sich {bei} verschiedenen großen Ingenieurbüros in ganz Deutschland.",
+        "words": [
+            "bei",
+            "um",
+            "auf",
+            "an",
+            "mit",
+            "zu"
+        ]
+    },
+    {
+        "key": "sich beziehen",
+        "sentence": "Meine Frage bezieht sich direkt {auf} das in der E-Mail genannte Dokument.",
+        "words": [
+            "auf",
+            "zu",
+            "mit",
+            "über",
+            "an",
+            "von"
+        ]
+    },
+    {
+        "key": "sich beziehen",
+        "sentence": "Ich {beziehe} mich auf Ihr Stellenangebot vom letzten Montag.",
+        "words": [
+            "beziehe",
+            "bezieht",
+            "beziehen",
+            "bezog",
+            "bezogen",
+            "beziehen"
+        ]
+    },
+    {
+        "key": "bitten (Präp)",
+        "sentence": "Ich möchte Sie höflich {um} die Übermittlung der fehlenden Unterlagen bitten.",
+        "words": [
+            "um",
+            "für",
+            "zu",
+            "mit",
+            "an",
+            "von"
+        ]
+    },
+    {
+        "key": "bitten (Verb)",
+        "sentence": "Wir {bitten} unsere Kunden um Verständnis für die Verzögerung.",
+        "words": [
+            "bitten",
+            "bittest",
+            "bittet",
+            "bat",
+            "gebeten",
+            "baten"
+        ]
+    },
+    {
+        "key": "danken",
+        "sentence": "Ich danke Ihnen herzlich {für} die schnelle Beantwortung meiner Anfrage.",
+        "words": [
+            "für",
+            "über",
+            "mit",
+            "an",
+            "von",
+            "zu"
+        ]
+    },
+    {
+        "key": "danken",
+        "sentence": "Der Chef dankt dem gesamten Team für {seinen} Einsatz.",
+        "words": [
+            "seinen",
+            "ihren",
+            "ihr",
+            "sein",
+            "unseren",
+            "deinen"
+        ]
+    },
+    {
+        "key": "denken (Präp)",
+        "sentence": "Bitte denken Sie bei der Kostenplanung auch {an} unerwartete Nebenkosten.",
+        "words": [
+            "an",
+            "über",
+            "von",
+            "in",
+            "mit",
+            "zu"
+        ]
+    },
+    {
+        "key": "denken (Nomen)",
+        "sentence": "Ihr kritisches {Denken} hilft dem Team, Fehler frühzeitig zu erkennen.",
+        "words": [
+            "Denken",
+            "Handeln",
+            "Sprechen",
+            "Schreiben",
+            "Lesen",
+            "Wissen"
+        ]
+    },
+    {
+        "key": "demonstrieren",
+        "sentence": "Die Gewerkschaftsmitglieder demonstrieren {gegen} die geplante Lohnkürzung.",
+        "words": [
+            "gegen",
+            "für",
+            "zu",
+            "mit",
+            "an",
+            "von"
+        ]
+    },
+    {
+        "key": "demonstrieren",
+        "sentence": "Der IT-Spezialist muss die Funktion der neuen Software {vor} den Nutzern demonstrieren.",
+        "words": [
+            "vor",
+            "hinter",
+            "neben",
+            "in",
+            "mit",
+            "zu"
+        ]
+    }
+]

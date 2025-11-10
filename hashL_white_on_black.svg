@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleLight">
+  <title id="titleLight">#L italic icon — black on white</title>
+  <rect width="512" height="512" rx="128" ry="128" fill="black"/>
+  <text x="50" y="420"
+        font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-style="italic"
+        font-weight="600"
+        font-size="360"
+        fill="white"
+        letter-spacing="-14">#</text>
+  <text x="230" y="420"
+        font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-style="italic"
+        font-weight="600"
+        font-size="500"
+        fill="white"
+        letter-spacing="-14">L</text>
+</svg>
