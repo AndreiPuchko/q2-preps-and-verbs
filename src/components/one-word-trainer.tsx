@@ -49,6 +49,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     const [answers, setAnswers] = React.useState<Record<number, {
         correct: boolean;
         lastPassNumber?: number;
+        correctCount?: number;
     }>>(() => loadStatsFromCookie().answers);
 
     // Calculate statistics
@@ -64,55 +65,47 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     }, [answers]);
 
     const getRandomIndex = () => {
-        // Every 5th attempt should be an unanswered exercise if available
-        if (passCount > 0 && (passCount + 1) % 5 === 0) {
-            const unansweredIndices = data.map((_, i) => i).filter(i => !answers[i]);
-            if (unansweredIndices.length > 0) {
-                // Pick a random unanswered exercise that's not the current one
-                const availableIndices = unansweredIndices.filter(i => i !== currentIndex);
-                if (availableIndices.length > 0) {
-                    return availableIndices[Math.floor(Math.random() * availableIndices.length)];
-                }
-                // If current index is the only unanswered one, still use regular selection
+        // Every 4rd attempt should be an unanswered exercise if available
+        if (passCount > 0 && (passCount + 1) % 4 === 0) {
+            const unanswered = data
+                .map((_, i) => i)
+                .filter(i => !answers[i] && i !== currentIndex);
+
+            if (unanswered.length > 0) {
+                return unanswered[Math.floor(Math.random() * unanswered.length)];
             }
         }
 
-        // Regular random selection logic
-        let newIndex;
-        let attempts = 0;
-        const maxAttempts = data.length * 2; // Prevent infinite loop
+        // Every 3th attempt → previously incorrect if available
+        if (passCount > 0 && (passCount + 1) % 3 === 0) {
+            const incorrect = data
+                .map((_, i) => i)
+                .filter(i => answers[i] && !answers[i].correct && i !== currentIndex);
 
-        do {
-            newIndex = Math.floor(Math.random() * data.length);
-            const answer = answers[newIndex];
-            // Accept index if:
-            // 1. Never answered before
-            // 2. Previously answered incorrectly
-            // 3. Correctly answered but more than 100 passes ago
-            const isValid = !answer ||
-                !answer.correct ||
-                (answer.correct && answer.lastPassNumber !== undefined &&
-                    passCount - answer.lastPassNumber >= 100);
-
-            if (isValid && newIndex !== currentIndex) {
-                return newIndex;
+            if (incorrect.length > 0) {
+                return incorrect[Math.floor(Math.random() * incorrect.length)];
             }
+        }
 
-            attempts++;
-            // If we can't find a perfect match after many attempts,
-            // fall back to any unanswered or incorrect exercise
-            if (attempts >= maxAttempts) {
-                const fallbackIndices = data.map((_, i) => i).filter(i =>
-                    !answers[i] || !answers[i].correct
-                );
-                if (fallbackIndices.length > 0) {
-                    return fallbackIndices[Math.floor(Math.random() * fallbackIndices.length)];
-                }
-                // If all exercises are correct and within 100 passes, reset pass count
-                setPassCount(0);
-                return Math.floor(Math.random() * data.length);
-            }
-        } while (true);
+        // Build list of eligible indices
+        const available = data
+            .map((_, i) => i)
+            .filter(i => {
+                const a = answers[i];
+                if (i === currentIndex) return false;
+                if (a?.correctCount >= 6) return false;
+                if (a?.correct && a.lastPassNumber !== undefined && passCount - a.lastPassNumber < 100)
+                    return false;
+                return true;
+            });
+
+        // If all are excluded, fall back to any except current
+        const pool = available.length > 0
+            ? available
+            : data.map((_, i) => i).filter(i => i !== currentIndex);
+
+        // Pick random from pool
+        return pool[Math.floor(Math.random() * pool.length)];
     };
 
     const handleNext = async () => {
@@ -180,7 +173,8 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
             ...answers,
             [currentIndex]: {
                 correct: isCorrect,
-                lastPassNumber: isCorrect ? passCount : undefined
+                lastPassNumber: isCorrect ? passCount : undefined,
+                correctCount: isCorrect ? (answers[currentIndex]?.correctCount ? answers[currentIndex].correctCount + 1 : 1) : undefined
             }
         };
         setAnswers(newAnswers);
@@ -210,7 +204,6 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
 
     return (
         <div className="exercise-container">
-            <h3>{ex.key}</h3>
             <div className="stats">
                 <span>Correct: {stats.correct}</span>
                 <span>Wrong: {stats.wrong}</span>
@@ -232,6 +225,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                         : part.text
                 )}
             </div>
+            <h3>{ex.key}</h3>
             <div className="word-pool">
                 {shuffledWords.map((w, index) => (
                     <div
