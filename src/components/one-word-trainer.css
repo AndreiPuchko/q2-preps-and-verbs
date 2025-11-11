@@ -167,3 +167,9 @@
     border-radius: 0.5rem;
     border: 1px solid gray;
 }
+
+.key {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

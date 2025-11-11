@@ -113,7 +113,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
             .filter((i) => {
                 const a = answers[i];
                 if (i === currentIndex) return false;
-                if (a?.correctCount >= 6) return false;
+                if (a?.correctCount && a?.correctCount >= 6) return false;
                 if (a?.correct && a.lastPassNumber !== undefined && passCount - a.lastPassNumber < 100)
                     return false;
                 return true;
@@ -153,17 +153,17 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
             const isCorrect = handleCheck();
             const msgForm = await App.instance?.showMsg(
                 ex.sentence +
-                    ":\n\n" +
-                    (isCorrect
-                        ? "Richtig! 👍"
-                        : `Falsch! Die richtige Antwort ist: ${answer}`),
+                ":\n\n" +
+                (isCorrect
+                    ? "Richtig! 👍"
+                    : `Falsch! Die richtige Antwort ist: ${answer}`),
                 isCorrect ? "success" : "error"
             );
             if (msgForm) {
                 setTimeout(() => msgForm.closeDialog(), 2000);
             }
         }
-        setPassCount((prev) => prev + 1);
+        setPassCount((prev: number) => prev + 1);
         const nextIndex = getRandomIndex();
         setCurrentIndex(nextIndex);
         setShuffledWords([...data[nextIndex].words].sort(() => Math.random() - 0.5));
@@ -233,13 +233,12 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                     part.isBlank ? (
                         <div
                             key={index}
-                            className={`blank ${
-                                isChecked
-                                    ? selectedWord === answer
-                                        ? "correct"
-                                        : "wrong"
-                                    : ""
-                            }`}
+                            className={`blank ${isChecked
+                                ? selectedWord === answer
+                                    ? "correct"
+                                    : "wrong"
+                                : ""
+                                }`}
                         >
                             {selectedWord}
                         </div>
@@ -248,9 +247,9 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                     )
                 )}
             </div>
-
-            <h3>{ex.key}</h3>
-
+            <div className="key">
+                <h3>{ex.key}</h3> [{answers[currentIndex]?.correctCount}]
+            </div>
             <div className="word-pool">
                 {shuffledWords.map((w, index) => (
                     <div
