@@ -1,8 +1,7 @@
 import React from "react";
-import "./one-word-trainer.css"
-import { App } from '../App'
+import "./one-word-trainer.css";
+import { App } from "../App";
 import Cookies from "js-cookie";
-
 
 type WordEntry = {
     key: string;
@@ -10,29 +9,54 @@ type WordEntry = {
     words: [string, ...string[]]; // tuple with at least one string
 };
 
-
 interface OneWordTrainerData {
     data: WordEntry[];
 }
 
-const COOKIE_NAME = 'prep_trainer_stats';
+const STORAGE_KEY = "prep_trainer_stats";
+const COOKIE_NAME = "prep_trainer_stats"; // legacy cookie name for migration
 
-// Helper functions for cookie operations
-const saveStatsToCookie = (answers: Record<number, { correct: boolean; lastPassNumber?: number }>, passCount: number) => {
+// --- Storage helpers ---
+
+const saveStatsToStorage = (
+    answers: Record<number, { correct: boolean; lastPassNumber?: number; correctCount?: number }>,
+    passCount: number
+) => {
     const data = { answers, passCount };
-    Cookies.set(COOKIE_NAME, JSON.stringify(data), { expires: 365, path: '/' }); // 1 year expiration
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch (e) {
+        console.error("Failed to save stats to localStorage:", e);
+    }
 };
 
-const loadStatsFromCookie = () => {
+const loadStatsFromStorage = () => {
+    // Migration: move data from cookie → localStorage if exists
     const cookieData = Cookies.get(COOKIE_NAME);
     if (cookieData) {
         try {
-            const data = JSON.parse(cookieData);
-            return { answers: data.answers, passCount: data.passCount };
+            const parsed = JSON.parse(cookieData);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
+            Cookies.remove(COOKIE_NAME, { path: "/" });
+            console.log("Migrated trainer stats from cookie to localStorage.");
+        } catch (err) {
+            console.warn("Failed to migrate old cookie data:", err);
+        }
+    }
+
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+        try {
+            const data = JSON.parse(stored);
+            return {
+                answers: data.answers ?? {},
+                passCount: data.passCount ?? 0,
+            };
         } catch {
             return { answers: {}, passCount: 0 };
         }
     }
+
     return { answers: {}, passCount: 0 };
 };
 
@@ -44,44 +68,40 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
     const [isChecked, setIsChecked] = React.useState(false);
     const [shuffledWords, setShuffledWords] = React.useState<string[]>([]);
 
-    // Initialize state from cookie
-    const [passCount, setPassCount] = React.useState(() => loadStatsFromCookie().passCount);
-    const [answers, setAnswers] = React.useState<Record<number, {
-        correct: boolean;
-        lastPassNumber?: number;
-        correctCount?: number;
-    }>>(() => loadStatsFromCookie().answers);
+    // Initialize state from storage
+    const [passCount, setPassCount] = React.useState(() => loadStatsFromStorage().passCount);
+    const [answers, setAnswers] = React.useState<
+        Record<number, { correct: boolean; lastPassNumber?: number; correctCount?: number }>
+    >(() => loadStatsFromStorage().answers);
 
     // Calculate statistics
     const stats = React.useMemo(() => {
         const total = Object.values(answers).length;
-        const correct = Object.values(answers).filter(a => a.correct).length;
+        const correct = Object.values(answers).filter((a) => a.correct).length;
         return {
             total,
             correct,
             wrong: total - correct,
-            percentage: total ? Math.round((correct / total) * 100) : 0
+            percentage: total ? Math.round((correct / total) * 100) : 0,
         };
     }, [answers]);
 
     const getRandomIndex = () => {
-        // Every 4rd attempt should be an unanswered exercise if available
+        // Every 4th attempt → unanswered if available
         if (passCount > 0 && (passCount + 1) % 4 === 0) {
             const unanswered = data
                 .map((_, i) => i)
-                .filter(i => !answers[i] && i !== currentIndex);
-
+                .filter((i) => !answers[i] && i !== currentIndex);
             if (unanswered.length > 0) {
                 return unanswered[Math.floor(Math.random() * unanswered.length)];
             }
         }
 
-        // Every 3th attempt → previously incorrect if available
+        // Every 3rd attempt → previously incorrect if available
         if (passCount > 0 && (passCount + 1) % 3 === 0) {
             const incorrect = data
                 .map((_, i) => i)
-                .filter(i => answers[i] && !answers[i].correct && i !== currentIndex);
-
+                .filter((i) => answers[i] && !answers[i].correct && i !== currentIndex);
             if (incorrect.length > 0) {
                 return incorrect[Math.floor(Math.random() * incorrect.length)];
             }
@@ -90,7 +110,7 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
         // Build list of eligible indices
         const available = data
             .map((_, i) => i)
-            .filter(i => {
+            .filter((i) => {
                 const a = answers[i];
                 if (i === currentIndex) return false;
                 if (a?.correctCount >= 6) return false;
@@ -99,72 +119,14 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                 return true;
             });
 
-        // If all are excluded, fall back to any except current
-        const pool = available.length > 0
-            ? available
-            : data.map((_, i) => i).filter(i => i !== currentIndex);
+        // Fallback if everything excluded
+        const pool =
+            available.length > 0
+                ? available
+                : data.map((_, i) => i).filter((i) => i !== currentIndex);
 
-        // Pick random from pool
         return pool[Math.floor(Math.random() * pool.length)];
     };
-
-    const handleNext = async () => {
-        if (selectedWord && !isChecked) {
-            const isCorrect = handleCheck();
-            const msgForm = await App.instance?.showMsg(
-                ex.sentence + ":\n\n" +
-                (isCorrect ? "Richtig! 👍" : `Falsch! Die richtige Antwort ist: ${answer}`),
-                isCorrect ? "success" : "error"
-            );
-            if (msgForm) {
-                setTimeout(() => {
-                    msgForm.closeDialog()
-                }, 2000);
-            }
-        }
-        // Proceed to next exercise
-        setPassCount((prev: number) => prev + 1);
-        const nextIndex = getRandomIndex();
-        setCurrentIndex(nextIndex);
-        // Shuffle words for the next question
-        setShuffledWords([...data[nextIndex].words].sort(() => Math.random() - 0.5));
-        setSelectedWord("");
-        setIsChecked(false);
-    };
-
-    const ex = data[currentIndex];
-    // Initialize shuffled words if empty (first render)
-    React.useEffect(() => {
-        if (shuffledWords.length === 0) {
-            setShuffledWords([...ex.words].sort(() => Math.random() - 0.5));
-        }
-    }, [ex.words, shuffledWords.length]);
-
-    let answer: string = "";
-
-    // Process the sentence once - extract answer and split into parts
-    const processSentence = (sentence: string) => {
-        const parts = sentence.split(/(\{.*?\})/);
-        const match = sentence.match(/\{(.*?)\}/);
-        if (match) {
-            answer = match[1]; // Save the word inside curly braces to answer
-        }
-        return parts.map(part => ({
-            isBlank: part.startsWith('{') && part.endsWith('}'),
-            text: part
-        }));
-    };
-
-    const handleWordClick = (word: string) => {
-        setSelectedWord(word);
-    };
-
-    // Handle check when selectedWord changes
-    React.useEffect(() => {
-        if (selectedWord && !isChecked) {
-            handleCheck();
-        }
-    }, [selectedWord]); // Only run when selectedWord changes
 
     const handleCheck = () => {
         setIsChecked(true);
@@ -174,29 +136,84 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
             [currentIndex]: {
                 correct: isCorrect,
                 lastPassNumber: isCorrect ? passCount : undefined,
-                correctCount: isCorrect ? (answers[currentIndex]?.correctCount ? answers[currentIndex].correctCount + 1 : 1) : undefined
-            }
+                correctCount: isCorrect
+                    ? answers[currentIndex]?.correctCount
+                        ? answers[currentIndex].correctCount + 1
+                        : 1
+                    : undefined,
+            },
         };
         setAnswers(newAnswers);
-        // Save to cookie after updating
-        saveStatsToCookie(newAnswers, passCount);
+        saveStatsToStorage(newAnswers, passCount);
         return isCorrect;
     };
 
+    const handleNext = async () => {
+        if (selectedWord && !isChecked) {
+            const isCorrect = handleCheck();
+            const msgForm = await App.instance?.showMsg(
+                ex.sentence +
+                    ":\n\n" +
+                    (isCorrect
+                        ? "Richtig! 👍"
+                        : `Falsch! Die richtige Antwort ist: ${answer}`),
+                isCorrect ? "success" : "error"
+            );
+            if (msgForm) {
+                setTimeout(() => msgForm.closeDialog(), 2000);
+            }
+        }
+        setPassCount((prev) => prev + 1);
+        const nextIndex = getRandomIndex();
+        setCurrentIndex(nextIndex);
+        setShuffledWords([...data[nextIndex].words].sort(() => Math.random() - 0.5));
+        setSelectedWord("");
+        setIsChecked(false);
+    };
+
+    const ex = data[currentIndex];
+
+    React.useEffect(() => {
+        if (shuffledWords.length === 0) {
+            setShuffledWords([...ex.words].sort(() => Math.random() - 0.5));
+        }
+    }, [ex.words, shuffledWords.length]);
+
+    let answer = "";
+    const processSentence = (sentence: string) => {
+        const parts = sentence.split(/(\{.*?\})/);
+        const match = sentence.match(/\{(.*?)\}/);
+        if (match) answer = match[1];
+        return parts.map((part) => ({
+            isBlank: part.startsWith("{") && part.endsWith("}"),
+            text: part,
+        }));
+    };
+
+    const handleWordClick = (word: string) => {
+        setSelectedWord(word);
+    };
+
+    React.useEffect(() => {
+        if (selectedWord && !isChecked) {
+            handleCheck();
+        }
+    }, [selectedWord]);
+
     const handleReset = async () => {
-        // Reset current exercise state
-        const ask = await App.instance?.showMsg("Darf ich die Statistik zurücksetzten?", "Question", ["Ok", "Cancel"]);
+        const ask = await App.instance?.showMsg(
+            "Darf ich die Statistik zurücksetzten?",
+            "Question",
+            ["Ok", "Cancel"]
+        );
         await ask?.waitForClose();
         if (ask?.payload["button"] === 0) {
             setIsChecked(false);
             setSelectedWord("");
-            // Reset statistics
             setAnswers({});
             setPassCount(0);
-            // Shuffle words for the current question
             setShuffledWords([...data[currentIndex].words].sort(() => Math.random() - 0.5));
-            // Save empty stats to cookie
-            saveStatsToCookie({}, 0);
+            saveStatsToStorage({}, 0);
         }
     };
 
@@ -210,22 +227,30 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                 <span>Total: {stats.total}</span>
                 <span>Success Rate: {stats.percentage}%</span>
             </div>
+
             <div className="sentence">
                 {sentenceParts.map((part, index) =>
-                    part.isBlank ?
+                    part.isBlank ? (
                         <div
                             key={index}
-                            className={`blank ${isChecked ?
-                                selectedWord === answer ? 'correct' : 'wrong'
-                                : ''
-                                }`}
+                            className={`blank ${
+                                isChecked
+                                    ? selectedWord === answer
+                                        ? "correct"
+                                        : "wrong"
+                                    : ""
+                            }`}
                         >
                             {selectedWord}
                         </div>
-                        : part.text
+                    ) : (
+                        part.text
+                    )
                 )}
             </div>
+
             <h3>{ex.key}</h3>
+
             <div className="word-pool">
                 {shuffledWords.map((w, index) => (
                     <div
@@ -237,14 +262,17 @@ export const OneWordTrainer: React.FC<OneWordTrainerData> = ({ data }) => {
                     </div>
                 ))}
             </div>
+
             <div className="buttons">
                 <button onClick={handleNext}>Next</button>
                 <button onClick={handleReset}>Reset</button>
             </div>
-            {selectedWord && selectedWord !== answer ? <div className="error-message">
-                Du hast einen Fehler gemacht. Versuch es noch mal.
-            </div> : null}
 
+            {selectedWord && selectedWord !== answer && (
+                <div className="error-message">
+                    Du hast einen Fehler gemacht. Versuch es noch mal.
+                </div>
+            )}
         </div>
     );
 };
